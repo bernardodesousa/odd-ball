@@ -3,6 +3,8 @@ const url = require('url');
 const fs = require('fs');
 const path = require('path');
 
+let httpServer;
+
 const mimeType = {
     '.ico': 'image/x-icon',
     '.html': 'text/html',
@@ -17,7 +19,7 @@ const mimeType = {
 };
 
 function staticServer (port) {
-    http.createServer(function (req, res) {
+    httpServer = http.createServer(function (req, res) {
       console.log(`${req.method} ${req.url}`);
 
       const parsedUrl = url.parse(req.url);
@@ -54,6 +56,8 @@ function staticServer (port) {
     }).listen(parseInt(port));
 
     console.log(`Server listening on port ${port}`);
+
+    return httpServer;
 }
 
 module.exports = staticServer;

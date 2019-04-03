@@ -1,4 +1,6 @@
 const staticServer = require('./static_server');
-const port = process.argv[2] || 3000;
+const socketServer = require('./socket_server');
+const staticPort = process.argv[2] || 3000;
+const socketPort = process.argv[3] || 3001;
 
-staticServer(port);
+socketServer(staticServer(staticPort));
