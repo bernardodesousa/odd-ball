@@ -1,25 +1,53 @@
-var WebSocketServer = require('websocket').server;
+const WebSocketServer = require('websocket').server;
+
+let players = [];
+
+function broadcast(players, msg){
+    for (let i=0; i<players.length; i++) {
+        players[i].send(msg);
+    }
+}
 
 function socketServer(httpServer) {
     wsServer = new WebSocketServer({
         httpServer: httpServer
     });
 
-    wsServer.on('request', function(request) {
+    wsServer.on('request', request => {
         console.log((new Date()) + ' Connection from origin ' + request.origin);
 
-        var connection = request.accept(null, request.origin);
+        let connection = request.accept(null, request.origin);
+        let index = players.push(connection) - 1;
+        let instruction = {};
+
+        console.log(players.length);
+        for (let i=0; i<players.length; i++) {
+            // console.log(players[i]);
+        }
 
         // This is the most important callback for us, we'll handle
         // all messages from users here.
         connection.on('message', msg => {
             if (msg.type === 'utf8') {
-                console.log(msg)
+                instruction = JSON.parse(msg.utf8Data);
+                
+                switch (instruction.type) {
+                    case "pointer-enter":
+                        console.log("enter");
+                        broadcast(players, JSON.stringify({type: "enter-player", id: index}));
+                    case "pointer-exit":
+                        // console.log("exit");
+                    case "pointer-coordinates":
+                        // console.log(instruction.coordinates);
+                        broadcast(players, JSON.stringify({type: "move-player", id: index, coordinates: instruction.coordinates}));
+                    default:
+                }
             }
         });
 
         connection.on('close', connection => {
-            console.log("DISCONNECTED -> ", connection);
+            players.splice(index, 1);
+            console.log(players.length);
         });
     });
 }

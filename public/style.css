@@ -1,8 +1,16 @@
 body {
-    background-color: black;
+    background-color: rgb(94, 94, 94);
 }
 
-#ball {
+#arena {
+	background-color: black;
+	width: 90vw;
+	height: 90vh;
+	margin: 5vh auto;
+}
+
+.player {
+    position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
