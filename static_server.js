@@ -20,8 +20,6 @@ const mimeType = {
 
 function staticServer (port) {
     httpServer = http.createServer(function (req, res) {
-      console.log(`${req.method} ${req.url}`);
-
       const parsedUrl = url.parse(req.url);
 
       const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');

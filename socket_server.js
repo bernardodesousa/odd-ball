@@ -20,20 +20,14 @@ function socketServer(httpServer) {
         let index = players.push(connection) - 1;
         let instruction = {};
 
-        console.log(players.length);
-        for (let i=0; i<players.length; i++) {
-            // console.log(players[i]);
-        }
+        console.log(`${players.length} players online.`);
 
-        // This is the most important callback for us, we'll handle
-        // all messages from users here.
         connection.on('message', msg => {
             if (msg.type === 'utf8') {
                 instruction = JSON.parse(msg.utf8Data);
                 
                 switch (instruction.type) {
                     case "pointer-enter":
-                        console.log("enter");
                         broadcast(players, JSON.stringify({type: "enter-player", id: index}));
                     case "pointer-exit":
                         // console.log("exit");
@@ -47,7 +41,7 @@ function socketServer(httpServer) {
 
         connection.on('close', connection => {
             players.splice(index, 1);
-            console.log(players.length);
+            console.log(`${players.length} players online.`);
         });
     });
 }
