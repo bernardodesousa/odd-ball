@@ -1,0 +1,22 @@
+{
+  "name": "odd-ball",
+  "version": "0.1.0",
+  "description": "Node.js e WebSockets: multiplayer mini-game no browser",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardodesousa/odd-ball.git"
+  },
+  "author": "Bernardo SOUSA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bernardodesousa/odd-ball/issues"
+  },
+  "homepage": "https://github.com/bernardodesousa/odd-ball#readme",
+  "dependencies": {
+    "websocket": "^1.0.28"
+  }
+}

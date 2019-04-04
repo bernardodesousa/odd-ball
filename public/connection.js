@@ -1,5 +1,5 @@
 window.WebSocket = window.WebSocket || window.MozWebSocket;
-let connection = new WebSocket(`ws://${window.location.hostname}:3000`);
+let connection = new WebSocket(`ws://${window.location.hostname}:3001`);
 let instruction;
 let player = {id: undefined};
 let opponents = [];
