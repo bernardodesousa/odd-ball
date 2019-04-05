@@ -1,5 +1,3 @@
-import { pointer } from './pointer.js';
+import './pointer/index.js';
 
 console.log("Hello, JS");
-
-pointer("Hey, there");
