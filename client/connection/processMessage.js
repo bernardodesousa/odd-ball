@@ -1,4 +1,4 @@
-import { setPlayer, setPlayers, setPlayerPosition, addPlayer, removePlayer } from '../gameState/gameState.js';
+import { setPlayer, setPlayers, setPlayerPosition, addPlayer, removePlayer } from '../gameState/index.js';
 
 let instruction = {};
 

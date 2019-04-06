@@ -1,29 +1,44 @@
-
-let arena = document.getElementById("arena");
+let doc = document;
+let arena;
 let player;
 let players = [];
 
+function setDocument(d){
+    doc = d;
+    arena = doc.getElementById("arena");
+}
+
 function setPlayer(id){
-    if (player != undefined){
-        player = id;
-    }
+    player = id;
+}
+
+function getPlayer(){
+    return player;
+}
+
+function getPlayers(){
+    return players;
 }
 
 function addPlayer(id, coordinates){
     if (!isPresent(id)){
-        let p = document.createElement("div");
-        p.id = id;
+        let p = doc.createElement("div");
+        p.setAttribute("id", id);
         p.classList.add("player");
         players[id] = p;
-        document.getElementById("arena").appendChild(p);
+        arena.appendChild(p);
         setPlayerPosition(id, coordinates);
+
+        // console.log(players[id].id);
     }
 }
 
 function setPlayers(pls){
     if (pls) {
         pls.forEach((p, index) => {
-            addPlayer(index, p.coordinates);
+            if (p != undefined && p.coordinates != undefined){
+                addPlayer(index, p.coordinates);
+            }
         });
     }
 }
@@ -44,8 +59,17 @@ function isPresent(id){
 }
 
 function removePlayer(id){
-    players[id].remove();
+    document.getElementById(id).remove();
     players.slice(id, 1);
 }
 
-export { setPlayer, setPlayerPosition, setPlayers, addPlayer, removePlayer };
+export {
+    setPlayer,
+    getPlayer,
+    setPlayerPosition,
+    setPlayers,
+    addPlayer,
+    removePlayer,
+    setDocument,
+    getPlayers
+};

@@ -5,8 +5,25 @@ let players = [];
 
 function broadcast(connections, msg){    
     for (let i=0; i<connections.length; i++) {
-        connections[i].send(JSON.stringify(msg));
+        if (connections[i]){
+            connections[i].send(JSON.stringify(msg));
+        }
     }
+}
+
+function countPlayers() {
+    let total = 0;
+    connections.forEach(c => {
+        if (c) total++;
+    });
+
+    return total;
+}
+
+function logger(){
+    let n = countPlayers();
+    if (n != 1) console.log(`${n} connections`);
+    else console.log(`1 connection`);
 }
 
 function socketServer(httpServer) {
@@ -15,8 +32,8 @@ function socketServer(httpServer) {
     });
 
     wsServer.on('request', request => {
-        console.log((new Date()) + ' Connection from origin ' + request.origin);
-        
+        console.log(request.origin);
+
         let instruction = {};
 
         let connection = request.accept(null, request.origin);
@@ -25,7 +42,7 @@ function socketServer(httpServer) {
 
         broadcast(connections, {"type": "new-player", "id": index, "players": players});
 
-        console.log(`${connections.length} connections.`);
+        logger();
 
         connection.on('message', msg => {
             if (msg.type === 'utf8') {
@@ -34,10 +51,7 @@ function socketServer(httpServer) {
                 switch (instruction.type) {
                     case "pointer-enter":
                         broadcast(connections, {type: "enter-player", id: index});
-                    case "pointer-exit":
-                        // console.log("exit");
                     case "pointer-coordinates":
-                        // console.log(instruction.coordinates);
                         players[index].coordinates = instruction.coordinates;
                         broadcast(connections, {type: "move-player", id: index, coordinates: instruction.coordinates});
                     default:
@@ -45,12 +59,11 @@ function socketServer(httpServer) {
             }
         });
 
-        connection.on('close', (code, description) => {
-            console.log(code, description);
-            connections.splice(index, 1);
-            players.splice(index, 1);
+        connection.on('close', () => {
+            connections[index] = undefined;
+            players[index] = undefined;
             broadcast(connections, {type: "player-left", id: index});
-            console.log(`${connections.length} connections.`);
+            logger();
         });
     });
 }
