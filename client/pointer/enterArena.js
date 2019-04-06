@@ -1,4 +1,4 @@
-import { connection } from '../connection.js';
+import { connection } from '../connection/index.js';
 
 function enterArena() {
     let instruction = {

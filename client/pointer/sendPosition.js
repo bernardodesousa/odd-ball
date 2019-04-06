@@ -1,4 +1,4 @@
-import { connection } from '../connection.js';
+import { connection } from '../connection/index.js';
 
 function sendPosition(event) {
     let x = (event.pageX - event.currentTarget.offsetLeft) / event.currentTarget.clientWidth

@@ -1,10 +1,11 @@
 const WebSocketServer = require('websocket').server;
 
+let connections = [];
 let players = [];
 
-function broadcast(players, msg){
-    for (let i=0; i<players.length; i++) {
-        players[i].send(msg);
+function broadcast(connections, msg){    
+    for (let i=0; i<connections.length; i++) {
+        connections[i].send(JSON.stringify(msg));
     }
 }
 
@@ -15,33 +16,41 @@ function socketServer(httpServer) {
 
     wsServer.on('request', request => {
         console.log((new Date()) + ' Connection from origin ' + request.origin);
-
-        let connection = request.accept(null, request.origin);
-        let index = players.push(connection) - 1;
+        
         let instruction = {};
 
-        console.log(`${players.length} players online.`);
+        let connection = request.accept(null, request.origin);
+        let index = connections.push(connection) - 1;
+        players[index] = {coordinates: [0, 0]};
+
+        broadcast(connections, {"type": "new-player", "id": index, "players": players});
+
+        console.log(`${connections.length} connections.`);
 
         connection.on('message', msg => {
             if (msg.type === 'utf8') {
                 instruction = JSON.parse(msg.utf8Data);
-                
+
                 switch (instruction.type) {
                     case "pointer-enter":
-                        broadcast(players, JSON.stringify({type: "enter-player", id: index}));
+                        broadcast(connections, {type: "enter-player", id: index});
                     case "pointer-exit":
                         // console.log("exit");
                     case "pointer-coordinates":
                         // console.log(instruction.coordinates);
-                        broadcast(players, JSON.stringify({type: "move-player", id: index, coordinates: instruction.coordinates}));
+                        players[index].coordinates = instruction.coordinates;
+                        broadcast(connections, {type: "move-player", id: index, coordinates: instruction.coordinates});
                     default:
                 }
             }
         });
 
-        connection.on('close', connection => {
+        connection.on('close', (code, description) => {
+            console.log(code, description);
+            connections.splice(index, 1);
             players.splice(index, 1);
-            console.log(`${players.length} players online.`);
+            broadcast(connections, {type: "player-left", id: index});
+            console.log(`${connections.length} connections.`);
         });
     });
 }
