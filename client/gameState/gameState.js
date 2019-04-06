@@ -4,7 +4,7 @@ let player;
 let players = [];
 
 function setPlayer(id){
-    if (!player){
+    if (player != undefined){
         player = id;
     }
 }
@@ -48,4 +48,4 @@ function removePlayer(id){
     players.slice(id, 1);
 }
 
-export { player, players, setPlayer, setPlayerPosition, setPlayers, addPlayer, removePlayer };
+export { setPlayer, setPlayerPosition, setPlayers, addPlayer, removePlayer };
