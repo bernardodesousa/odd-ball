@@ -1,6 +1,6 @@
 
 let arena = document.getElementById("arena");
-let player; // index to players
+let player;
 let players = [];
 
 function setPlayer(id){
