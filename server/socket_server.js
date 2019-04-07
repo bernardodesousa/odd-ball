@@ -51,9 +51,14 @@ function socketServer(httpServer) {
                 switch (instruction.type) {
                     case "pointer-enter":
                         broadcast(connections, {type: "enter-player", id: index});
+                        break;
                     case "pointer-coordinates":
                         players[index].coordinates = instruction.coordinates;
                         broadcast(connections, {type: "move-player", id: index, coordinates: instruction.coordinates});
+                        break;
+                    case "shot":
+                        console.log(instruction.coordinates);
+                        break;
                     default:
                 }
             }
