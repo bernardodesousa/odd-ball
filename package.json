@@ -17,15 +17,14 @@
   },
   "homepage": "https://github.com/bernardodesousa/odd-ball#readme",
   "dependencies": {
-    "jest-puppeteer": "^4.1.0",
-    "mock-browser": "^0.92.14",
-    "puppeteer": "^1.14.0",
     "websocket": "^1.0.28"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "jest-puppeteer": "^4.1.0",
+    "puppeteer": "^1.14.0"
   },
   "jest": {
     "preset": "jest-puppeteer"

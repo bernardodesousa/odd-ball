@@ -1,7 +1,7 @@
 import { processMessage } from './processMessage.js';
 
 window.WebSocket = window.WebSocket || window.MozWebSocket;
-let connection = new WebSocket(`ws://${window.location.hostname}:3001`);
+let connection = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);
 
 connection.onopen = () => {
     console.log("OPEN!");

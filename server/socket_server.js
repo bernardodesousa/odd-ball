@@ -22,8 +22,9 @@ function countPlayers() {
 
 function logger(){
     let n = countPlayers();
-    if (n != 1) console.log(`${n} connections`);
-    else console.log(`1 connection`);
+    if (n > 1) console.log(`${n} players`);
+    else if (n === 1) console.log(`1 player`);
+    else console.log(`No players`);
 }
 
 function socketServer(httpServer) {
@@ -71,6 +72,8 @@ function socketServer(httpServer) {
             logger();
         });
     });
+
+    logger();
 }
 
 module.exports = socketServer;
