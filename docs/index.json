@@ -1,0 +1,2070 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/client/connection/index.js",
+    "content": "import { processMessage } from './processMessage.js';\n\nwindow.WebSocket = window.WebSocket || window.MozWebSocket;\nlet connection = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);\n\nconnection.onopen = () => {\n    console.log(\"OPEN!\");\n};\n\nconnection.onerror = error => {\n    console.error(error);\n};\n\nconnection.onmessage = processMessage;\n\nsetInterval(() => {\n    if (connection.readyState !== 1) {\n        console.error(\"Server not reachable.\");\n    }\n}, 5000);\n\nexport { connection };\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/connection/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "connection",
+    "memberof": "src/client/connection/index.js",
+    "static": true,
+    "longname": "src/client/connection/index.js~connection",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/connection/index.js",
+    "importStyle": "{connection}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/client/connection/processMessage.js",
+    "content": "import { setPlayer, setPlayers, setPlayerPosition, addPlayer, removePlayer } from '../gameState/index.js';\n\nlet instruction = {};\n\nfunction processMessage(msg) {\n    instruction = JSON.parse(msg.data);\n\n    switch (instruction.type) {\n        case \"move-player\":\n            setPlayerPosition(instruction.id, instruction.coordinates);\n            break;\n        case \"enter-player\":\n            addPlayer(instruction.id);\n            break;\n        case \"player-left\":\n            removePlayer(instruction.id);\n            break;\n        case \"new-player\":\n            setPlayers(instruction.players);\n            setPlayer(instruction.id);\n            break;\n    }\n}\n\nexport { processMessage };",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/connection/processMessage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "instruction",
+    "memberof": "src/client/connection/processMessage.js",
+    "static": true,
+    "longname": "src/client/connection/processMessage.js~instruction",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/client/connection/processMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "processMessage",
+    "memberof": "src/client/connection/processMessage.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/connection/processMessage.js~processMessage",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/connection/processMessage.js",
+    "importStyle": "{processMessage}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "msg",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/client/control/calculatePosition.js",
+    "content": "function calculatePosition(event) {\n    let x = (event.pageX - event.currentTarget.offsetLeft) / event.currentTarget.clientWidth;\n    let y = (event.pageY - event.currentTarget.offsetTop) / event.currentTarget.clientHeight;\n\n    return [x, y];\n}\n\nexport { calculatePosition };\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/control/calculatePosition.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "calculatePosition",
+    "memberof": "src/client/control/calculatePosition.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/control/calculatePosition.js~calculatePosition",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/control/calculatePosition.js",
+    "importStyle": "{calculatePosition}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/client/control/enterArena.js",
+    "content": "import { connection } from '../connection/index.js';\n\nfunction enterArena() {\n    let instruction = {\n        type: \"pointer-enter\"\n    }\n\n    connection.send(JSON.stringify(instruction));\n}\n\nexport { enterArena }\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/control/enterArena.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "enterArena",
+    "memberof": "src/client/control/enterArena.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/control/enterArena.js~enterArena",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/control/enterArena.js",
+    "importStyle": "{enterArena}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/client/control/index.js",
+    "content": "import { enterArena } from './enterArena.js';\nimport { sendPosition } from './sendPosition.js';\nimport { shoot } from './shoot.js';\n\nlet arena = document.getElementById(\"arena\");\n\narena.addEventListener(\"pointerenter\", enterArena);\narena.addEventListener(\"pointermove\", sendPosition);\n\narena.addEventListener(\"click\", shoot);\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/control/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "arena",
+    "memberof": "src/client/control/index.js",
+    "static": true,
+    "longname": "src/client/control/index.js~arena",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/client/control/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/client/control/sendPosition.js",
+    "content": "import { connection } from '../connection/index.js';\nimport { calculatePosition } from './calculatePosition.js';\n\nfunction sendPosition(event) {\n    let instruction = {\n        type: \"coordinates\",\n        coordinates: calculatePosition(event)\n    }\n\n    connection.send(JSON.stringify(instruction));\n}\n\nexport { sendPosition };\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/control/sendPosition.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "sendPosition",
+    "memberof": "src/client/control/sendPosition.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/control/sendPosition.js~sendPosition",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/control/sendPosition.js",
+    "importStyle": "{sendPosition}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "event",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/client/control/shoot.js",
+    "content": "import { connection } from '../connection/index.js';\nimport { calculatePosition } from './calculatePosition.js';\n\nfunction shoot(e) {\n    let instruction = {\n        type: \"shot\",\n        coordinates: calculatePosition(e)\n    }\n\n    connection.send(JSON.stringify(instruction));\n}\n\nexport { shoot };\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/control/shoot.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "shoot",
+    "memberof": "src/client/control/shoot.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/control/shoot.js~shoot",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/control/shoot.js",
+    "importStyle": "{shoot}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/client/gameState/index.js",
+    "content": "let doc = document;\nlet arena;\nlet player;\nlet players = [];\n\nfunction setDocument(d){\n    doc = d;\n    arena = doc.getElementById(\"arena\");\n}\n\nfunction setPlayer(id){\n    player = id;\n}\n\nfunction getPlayer(){\n    return player;\n}\n\nfunction getPlayers(){\n    return players;\n}\n\nfunction addPlayer(id, coordinates){\n    if (!isPresent(id)){\n        let p = doc.createElement(\"div\");\n        p.setAttribute(\"id\", id);\n        p.classList.add(\"player\");\n        players[id] = p;\n        arena.appendChild(p);\n        setPlayerPosition(id, coordinates);\n    }\n}\n\nfunction setPlayers(pls){\n    if (pls) {\n        pls.forEach((p, index) => {\n            if (p != undefined && p.coordinates != undefined){\n                addPlayer(index, p.coordinates);\n            }\n        });\n    }\n}\n\nfunction setPlayerPosition(id, coordinates) {\n    if (id != undefined && coordinates){\n        players[id].style.top = (arena.clientHeight * coordinates[1]) + \"px\";\n        players[id].style.left = (arena.clientWidth * coordinates[0]) + \"px\";\n    }\n}\n\nfunction isPresent(id){\n    for (let i=0; i<players.length; i++) {\n        if (players[i].id == id) return true;\n    }\n\n    return false;\n}\n\nfunction removePlayer(id){\n    document.getElementById(id).remove();\n    players.slice(id, 1);\n}\n\nexport {\n    setPlayer,\n    getPlayer,\n    setPlayerPosition,\n    setPlayers,\n    addPlayer,\n    removePlayer,\n    setDocument,\n    getPlayers\n};\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/gameState/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "doc",
+    "memberof": "src/client/gameState/index.js",
+    "static": true,
+    "longname": "src/client/gameState/index.js~doc",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "players",
+    "memberof": "src/client/gameState/index.js",
+    "static": true,
+    "longname": "src/client/gameState/index.js~players",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "isPresent",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~isPresent",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "setPlayer",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~setPlayer",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{setPlayer}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "getPlayer",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~getPlayer",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{getPlayer}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "setPlayerPosition",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~setPlayerPosition",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{setPlayerPosition}",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "coordinates",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "setPlayers",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~setPlayers",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{setPlayers}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "pls",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "addPlayer",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~addPlayer",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{addPlayer}",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "coordinates",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "removePlayer",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~removePlayer",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{removePlayer}",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "setDocument",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~setDocument",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{setDocument}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "d",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "getPlayers",
+    "memberof": "src/client/gameState/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/client/gameState/index.js~getPlayers",
+    "access": "public",
+    "export": true,
+    "importPath": "odd-ball/src/client/gameState/index.js",
+    "importStyle": "{getPlayers}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/client/main.js",
+    "content": "import './control/index.js';\nimport { setDocument } from './gameState/index.js';\n\nsetDocument(document);\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/client/main.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/server/HTTPServer.js",
+    "content": "const http = require('http');\nconst url = require('url');\nconst fs = require('fs');\nconst path = require('path');\n\nlet httpServer;\n\nconst mimeType = {\n    '.html': 'text/html',\n    '.js': 'text/javascript',\n    '.css': 'text/css'\n};\n\nfunction staticServer (port) {\n    httpServer = http.createServer(function (req, res) {\n        const parsedUrl = url.parse(req.url);\n\n        const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\\.\\.[\\/\\\\])+/, '');\n        let pathname = path.join(`${__dirname}/../client/`, sanitizePath);\n\n        fs.exists(pathname, function (exist) {\n            if(!exist) {\n                res.statusCode = 404;\n                res.end(`File ${pathname} not found!`);\n                return;\n            }\n\n            if (fs.statSync(pathname).isDirectory()) {\n                pathname += '/index.html';\n            }\n\n            fs.readFile(pathname, function(err, data){\n                if(err){\n                    res.statusCode = 500;\n                    res.end(`Error getting the file: ${err}.`);\n                } else {\n                    const ext = path.parse(pathname).ext;\n                    res.setHeader('Content-type', mimeType[ext] || 'text/plain' );\n                    res.end(data);\n                }\n            });\n        });\n    }).listen(parseInt(port));\n\n    console.log(`Server listening on port ${port}`);\n    return httpServer;\n}\n\nmodule.exports = staticServer;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/HTTPServer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "http",
+    "memberof": "src/server/HTTPServer.js",
+    "static": true,
+    "longname": "src/server/HTTPServer.js~http",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "url",
+    "memberof": "src/server/HTTPServer.js",
+    "static": true,
+    "longname": "src/server/HTTPServer.js~url",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "src/server/HTTPServer.js",
+    "static": true,
+    "longname": "src/server/HTTPServer.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "src/server/HTTPServer.js",
+    "static": true,
+    "longname": "src/server/HTTPServer.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "mimeType",
+    "memberof": "src/server/HTTPServer.js",
+    "static": true,
+    "longname": "src/server/HTTPServer.js~mimeType",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\".html\": string, \".js\": string, \".css\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "staticServer",
+    "memberof": "src/server/HTTPServer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/HTTPServer.js~staticServer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/HTTPServer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "port",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "content": "const processMessage = require(\"./processMessage.js\");\nconst removePlayer = require(\"./removePlayer.js\");\n\nfunction attachEventFunctionsTo(connection, connections, players, playerId) {\n    connection.on('message', datagram => {\n        processMessage(connections, players, playerId, datagram)\n    });\n\n    connection.on('close', () => {\n        removePlayer(connections, players, playerId)\n    });\n}\n\nmodule.exports = attachEventFunctionsTo;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "processMessage",
+    "memberof": "src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/attachEventFunctionsTo.js~processMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "removePlayer",
+    "memberof": "src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/attachEventFunctionsTo.js~removePlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "function",
+    "name": "attachEventFunctionsTo",
+    "memberof": "src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/attachEventFunctionsTo.js~attachEventFunctionsTo",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/attachEventFunctionsTo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connection",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "players",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "playerId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/broadcast.js",
+    "content": "function broadcast(connections, msg){    \n    for (let i=0; i<connections.length; i++) {\n        if (connections[i].connected){\n            connections[i].send(JSON.stringify(msg));\n        }\n    }\n}\n\nmodule.exports = broadcast;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/broadcast.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "broadcast",
+    "memberof": "src/server/WebSocketServer/broadcast.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/broadcast.js~broadcast",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/broadcast.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "msg",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/countPlayers.js",
+    "content": "function countPlayers(connections) {\n    let total = 0;\n    connections.forEach(c => {\n        if (c.connected) total++;\n    });\n\n    return total;\n}\n\nmodule.exports = countPlayers;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/countPlayers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "countPlayers",
+    "memberof": "src/server/WebSocketServer/countPlayers.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/countPlayers.js~countPlayers",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/countPlayers.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/index.js",
+    "content": "const WebSocketServer = require('websocket').server;\nconst newPlayer = require(\"./newPlayer.js\");\n\nlet connections = [];\nlet players = [];\n\nfunction socketServer(HTTPServer) {\n    wsServer = new WebSocketServer({\n        httpServer: HTTPServer\n    });\n\n    wsServer.on('request', connectionRequest => {\n        newPlayer(connections, players, connectionRequest);\n    });\n}\n\nmodule.exports = socketServer;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "WebSocketServer",
+    "memberof": "src/server/WebSocketServer/index.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/index.js~WebSocketServer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "newPlayer",
+    "memberof": "src/server/WebSocketServer/index.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/index.js~newPlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "connections",
+    "memberof": "src/server/WebSocketServer/index.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/index.js~connections",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "players",
+    "memberof": "src/server/WebSocketServer/index.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/index.js~players",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "socketServer",
+    "memberof": "src/server/WebSocketServer/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/index.js~socketServer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "HTTPServer",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/logPartySize.js",
+    "content": "const countPlayers = require('./countPlayers.js');\n\nfunction logPartySize(connections){\n    let n = countPlayers(connections);\n    if (n > 1) console.log(`${n} players`);\n    else if (n === 1) console.log(`1 player`);\n    else console.log(`No players`);\n}\n\nmodule.exports = logPartySize;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/logPartySize.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "countPlayers",
+    "memberof": "src/server/WebSocketServer/logPartySize.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/logPartySize.js~countPlayers",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/logPartySize.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "logPartySize",
+    "memberof": "src/server/WebSocketServer/logPartySize.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/logPartySize.js~logPartySize",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/logPartySize.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/movePlayer.js",
+    "content": "const broadcast = require('./broadcast.js');\n\nfunction movePlayer(connections, players, playerId, input) {\n    players[playerId].coordinates = input.coordinates;\n\n    let output = {\n        id: playerId,\n        type: \"move-player\",\n        coordinates: input.coordinates\n    }\n\n    broadcast(connections, output);\n}\n\nmodule.exports = movePlayer;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/movePlayer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "variable",
+    "name": "broadcast",
+    "memberof": "src/server/WebSocketServer/movePlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/movePlayer.js~broadcast",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/movePlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "movePlayer",
+    "memberof": "src/server/WebSocketServer/movePlayer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/movePlayer.js~movePlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/movePlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "players",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "playerId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "input",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/newPlayer.js",
+    "content": "const broadcast = require('./broadcast.js');\nconst logPartySize = require(\"./logPartySize.js\");\nconst attachEventFunctionsTo = require(\"./attachEventFunctionsTo.js\");\n\nconst acceptedProtocol = null;\n\nfunction newPlayer(connections, players, connectionRequest) {\n    let connection;\n    let playerId;\n\n    console.log(connectionRequest.origin);\n\n    connection = connectionRequest.accept(acceptedProtocol, connectionRequest.origin);\n    playerId = connections.push(connection) - 1;\n\n    players[playerId] = {coordinates: [0, 0]};\n\n    attachEventFunctionsTo(connection, connections, players, playerId);\n\n    broadcast(connections, {\"type\": \"new-player\", \"id\": playerId, \"players\": players});\n    logPartySize(connections);\n}\n\nmodule.exports = newPlayer;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "broadcast",
+    "memberof": "src/server/WebSocketServer/newPlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/newPlayer.js~broadcast",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "logPartySize",
+    "memberof": "src/server/WebSocketServer/newPlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/newPlayer.js~logPartySize",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "attachEventFunctionsTo",
+    "memberof": "src/server/WebSocketServer/newPlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/newPlayer.js~attachEventFunctionsTo",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "acceptedProtocol",
+    "memberof": "src/server/WebSocketServer/newPlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/newPlayer.js~acceptedProtocol",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "function",
+    "name": "newPlayer",
+    "memberof": "src/server/WebSocketServer/newPlayer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/newPlayer.js~newPlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/newPlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "players",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "connectionRequest",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/processMessage.js",
+    "content": "const broadcast = require('./broadcast.js');\nconst movePlayer = require(\"./movePlayer.js\");\n\nfunction processMessage(connections, players, playerId, datagram) {\n    if (datagram.type !== 'utf8') return;\n\n    let input = JSON.parse(datagram.utf8Data);\n\n    switch (input.type) {\n        case \"pointer-enter\":\n            break;\n        case \"coordinates\":\n            movePlayer(connections, players, playerId, input);\n            break;\n        case \"shot\":\n            console.log(input.coordinates);\n            break;\n    }\n}\n\nmodule.exports = processMessage;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/processMessage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "broadcast",
+    "memberof": "src/server/WebSocketServer/processMessage.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/processMessage.js~broadcast",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/processMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "movePlayer",
+    "memberof": "src/server/WebSocketServer/processMessage.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/processMessage.js~movePlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/processMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "processMessage",
+    "memberof": "src/server/WebSocketServer/processMessage.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/processMessage.js~processMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/processMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "players",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "playerId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "datagram",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/server/WebSocketServer/removePlayer.js",
+    "content": "const broadcast = require('./broadcast.js');\nconst logPartySize = require(\"./logPartySize.js\");\n\nfunction removePlayer(connections, players, playerId) {\n    players[playerId] = {};\n    broadcast(connections, {type: \"player-left\", id: playerId});\n    logPartySize(connections);\n}\n\nmodule.exports = removePlayer;\n",
+    "static": true,
+    "longname": "/home/barba/code/odd-ball/src/server/WebSocketServer/removePlayer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "broadcast",
+    "memberof": "src/server/WebSocketServer/removePlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/removePlayer.js~broadcast",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/removePlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "logPartySize",
+    "memberof": "src/server/WebSocketServer/removePlayer.js",
+    "static": true,
+    "longname": "src/server/WebSocketServer/removePlayer.js~logPartySize",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/removePlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "removePlayer",
+    "memberof": "src/server/WebSocketServer/removePlayer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/server/WebSocketServer/removePlayer.js~removePlayer",
+    "access": "public",
+    "export": false,
+    "importPath": "odd-ball/src/server/WebSocketServer/removePlayer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "connections",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "players",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "playerId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# odd-ball\n\n## Node.js e WebSockets: multiplayer mini-game no browser\n\nNode.js é um interpretador de JavaScript baseado no motor de interpretação V8 (Chrome, Opera). Uma abordagem “mãos na massa” será usada para iniciar os participantes ao uso dessa tecnologia. Ao final das atividades, os participantes terão contribuído com o desenvolvimento de um mini-game multiplayer que demonstra o uso de WebSockets para sincronização de estados, além de experimentar alguns dos benefícios de usar uma mesma linguagem de programação em todas as camadas de abstração do projeto.\n",
+    "longname": "/home/barba/code/odd-ball/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"odd-ball\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Node.js e WebSockets: multiplayer mini-game no browser\",\n  \"main\": \"main.js\",\n  \"scripts\": {\n    \"serve\": \"node main.js\",\n    \"test\": \"jest --verbose --env=jsdom\",\n    \"generate-docs\": \"./node_modules/.bin/esdoc\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/bernardodesousa/odd-ball.git\"\n  },\n  \"author\": \"Bernardo SOUSA\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/bernardodesousa/odd-ball/issues\"\n  },\n  \"homepage\": \"https://github.com/bernardodesousa/odd-ball#readme\",\n  \"dependencies\": {\n    \"websocket\": \"^1.0.28\"\n  },\n  \"devDependencies\": {\n    \"@babel/preset-env\": \"^7.4.3\",\n    \"babel-plugin-transform-es2015-modules-commonjs\": \"^6.26.2\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"jest\": \"^24.7.1\",\n    \"jest-puppeteer\": \"^4.1.0\",\n    \"puppeteer\": \"^1.14.0\"\n  },\n  \"jest\": {\n    \"preset\": \"jest-puppeteer\"\n  },\n  \"babel\": {\n    \"env\": {\n      \"test\": {\n        \"plugins\": [\n          \"transform-es2015-modules-commonjs\"\n        ]\n      }\n    }\n  }\n}\n",
+    "longname": "/home/barba/code/odd-ball/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "serve": "node main.js",
-    "test": "jest --verbose --env=jsdom"
+    "test": "jest --verbose --env=jsdom",
+    "generate-docs": "./node_modules/.bin/esdoc",
+    "generate-dependency-graph": "madge ./src -i ./docs/image/dependency-graph.png -l neato"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,14 @@
   },
   "homepage": "https://github.com/bernardodesousa/odd-ball#readme",
   "dependencies": {
+    "madge": "^3.4.4",
     "websocket": "^1.0.28"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
     "jest": "^24.7.1",
     "jest-puppeteer": "^4.1.0",
     "puppeteer": "^1.14.0"

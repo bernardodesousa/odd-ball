@@ -1,5 +1,5 @@
-const staticServer = require('./server/HTTPServer');
-const socketServer = require('./server/WebSocketServer');
-const staticPort = process.argv[2] || 4242;
+const HTTPServer = require('./src/server/HTTPServer');
+const socketServer = require('./src/server/WebSocketServer');
+const port = process.argv[2] || 4242;
 
-socketServer(staticServer(staticPort));
+socketServer(HTTPServer(port));
