@@ -16,7 +16,6 @@ function newPlayer(connections, players, connectionRequest) {
     players[playerId] = {coordinates: [0, 0]};
 
     attachEventFunctionsTo(connection, connections, players, playerId);
-
     broadcast(connections, {"type": "new-player", "id": playerId, "players": players});
     logPartySize(connections);
 }

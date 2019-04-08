@@ -1,4 +1,3 @@
-const broadcast = require('./broadcast.js');
 const movePlayer = require("./movePlayer.js");
 
 function processMessage(connections, players, playerId, datagram) {
