@@ -28,8 +28,6 @@ function addPlayer(id, coordinates){
         players[id] = p;
         arena.appendChild(p);
         setPlayerPosition(id, coordinates);
-
-        // console.log(players[id].id);
     }
 }
 

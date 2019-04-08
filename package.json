@@ -4,6 +4,7 @@
   "description": "Node.js e WebSockets: multiplayer mini-game no browser",
   "main": "main.js",
   "scripts": {
+    "serve": "node main.js",
     "test": "jest --verbose --env=jsdom"
   },
   "repository": {

@@ -1,12 +1,10 @@
 import { connection } from '../connection/index.js';
+import { calculatePosition } from './calculatePosition.js';
 
 function sendPosition(event) {
-    let x = (event.pageX - event.currentTarget.offsetLeft) / event.currentTarget.clientWidth
-    let y = (event.pageY - event.currentTarget.offsetTop) / event.currentTarget.clientHeight
-
     let instruction = {
-        type: "pointer-coordinates",
-        coordinates: [x, y]
+        type: "coordinates",
+        coordinates: calculatePosition(event)
     }
 
     connection.send(JSON.stringify(instruction));
