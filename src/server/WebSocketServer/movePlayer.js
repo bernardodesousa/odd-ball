@@ -1,7 +1,8 @@
 const broadcast = require('./broadcast.js');
+const GameState = require("../gameState");
 
-function movePlayer(connections, players, playerId, input) {
-    players[playerId].coordinates = input.coordinates;
+function movePlayer(connections, playerId, input) {
+    GameState.setCoordinates(playerId, input.coordinates);
 
     let output = {
         id: playerId,

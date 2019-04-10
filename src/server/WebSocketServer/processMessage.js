@@ -1,6 +1,6 @@
 const movePlayer = require("./movePlayer.js");
 
-function processMessage(connections, players, playerId, datagram) {
+function processMessage(connections, playerId, datagram) {
     if (datagram.type !== 'utf8') return;
 
     let input = JSON.parse(datagram.utf8Data);
@@ -9,7 +9,7 @@ function processMessage(connections, players, playerId, datagram) {
         case "pointer-enter":
             break;
         case "coordinates":
-            movePlayer(connections, players, playerId, input);
+            movePlayer(connections, playerId, input);
             break;
         case "shot":
             console.log(input.coordinates);

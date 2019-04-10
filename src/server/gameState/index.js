@@ -4,9 +4,10 @@ let players = [];
 
 function addPlayer(id, name) {
     players[id] = {
+        id: id,
         name: name,
         coordinates: [0, 0],
-        radius: 20,
+        radius: 10,
         hunter: false,
         deaths: 0,
         kills: 0,
@@ -22,4 +23,12 @@ function getPlayer(id) {
     return players[id];
 }
 
-module.exports = { addPlayer, removePlayer, getPlayer, evaluateShot };
+function getPlayers() {
+    return players;
+}
+
+function setCoordinates(id, coordinates){
+    players[id].coordinates = coordinates;
+}
+
+module.exports = { addPlayer, removePlayer, getPlayer, evaluateShot, getPlayers, setCoordinates };

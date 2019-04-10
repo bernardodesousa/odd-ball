@@ -1,10 +1,11 @@
 const broadcast = require('./broadcast.js');
 const logPartySize = require("./logPartySize.js");
 const attachEventFunctionsTo = require("./attachEventFunctionsTo.js");
+const GameState = require("../gameState");
 
 const acceptedProtocol = null;
 
-function newPlayer(connections, players, connectionRequest) {
+function newPlayer(connections, connectionRequest) {
     let connection;
     let playerId;
 
@@ -13,10 +14,11 @@ function newPlayer(connections, players, connectionRequest) {
     connection = connectionRequest.accept(acceptedProtocol, connectionRequest.origin);
     playerId = connections.push(connection) - 1;
 
-    players[playerId] = {coordinates: [0, 0]};
+    GameState.addPlayer(playerId, "Mary");
+    GameState.setCoordinates(playerId, [0, 0]);
 
-    attachEventFunctionsTo(connection, connections, players, playerId);
-    broadcast(connections, {"type": "new-player", "id": playerId, "players": players});
+    attachEventFunctionsTo(connection, connections, playerId);
+    broadcast(connections, {"type": "new-player", "id": playerId, "players": GameState.getPlayers()});
     logPartySize(connections);
 }
 

@@ -1,13 +1,13 @@
 const processMessage = require("./processMessage.js");
 const removePlayer = require("./removePlayer.js");
 
-function attachEventFunctionsTo(connection, connections, players, playerId) {
+function attachEventFunctionsTo(connection, connections, playerId) {
     connection.on('message', datagram => {
-        processMessage(connections, players, playerId, datagram)
+        processMessage(connections, playerId, datagram);
     });
 
     connection.on('close', () => {
-        removePlayer(connections, players, playerId)
+        removePlayer(connections, playerId);
     });
 }
 

@@ -2,7 +2,6 @@ const WebSocketServer = require('websocket').server;
 const newPlayer = require("./newPlayer.js");
 
 let connections = [];
-let players = [];
 
 function socketServer(HTTPServer) {
     wsServer = new WebSocketServer({
@@ -10,7 +9,7 @@ function socketServer(HTTPServer) {
     });
 
     wsServer.on('request', connectionRequest => {
-        newPlayer(connections, players, connectionRequest);
+        newPlayer(connections, connectionRequest);
     });
 }
 

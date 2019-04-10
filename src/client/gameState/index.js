@@ -20,22 +20,25 @@ function getPlayers(){
     return players;
 }
 
-function addPlayer(id, coordinates){
+function addPlayer(id, player){
+    console.log(player);
     if (!isPresent(id)){
-        let p = doc.createElement("div");
-        p.setAttribute("id", id);
-        p.classList.add("player");
-        players[id] = p;
-        arena.appendChild(p);
-        setPlayerPosition(id, coordinates);
+        players[id] = player;
+        players[id].element = doc.createElement("div");
+
+        players[id].element.setAttribute("id", id);
+        players[id].element.classList.add("player");
+        players[id].element.style.width = players[id].element.style.height = players[id].radius*2 + "px";
+        arena.appendChild(players[id].element);
+        setPlayerPosition(id, player.coordinates);
     }
 }
 
 function setPlayers(pls){
     if (pls) {
         pls.forEach((p, index) => {
-            if (p != undefined && p.coordinates != undefined){
-                addPlayer(index, p.coordinates);
+            if (p != undefined){
+                addPlayer(index, p);
             }
         });
     }
@@ -43,8 +46,11 @@ function setPlayers(pls){
 
 function setPlayerPosition(id, coordinates) {
     if (id != undefined && coordinates){
-        players[id].style.top = (arena.clientHeight * coordinates[1] - players[id].clientHeight/2) + "px";
-        players[id].style.left = (arena.clientWidth * coordinates[0] - players[id].clientWidth/2) + "px";
+
+        players[id].element.style.top = ((arena.clientHeight * coordinates[1] + arena.getBoundingClientRect().top) - players[id].element.clientHeight/2) + "px";
+        players[id].element.style.left = ((arena.clientWidth * coordinates[0] + arena.getBoundingClientRect().left) - players[id].element.clientWidth/2) + "px";
+        // players[id].element.style.top = (arena.clientHeight * coordinates[1] - players[id].element.clientHeight/2) + "px";
+        // players[id].element.style.left = (arena.clientWidth * coordinates[0] - players[id].element.clientWidth/2) + "px";
     }
 }
 
@@ -58,7 +64,7 @@ function isPresent(id){
 
 function removePlayer(id){
     document.getElementById(id).remove();
-    players.slice(id, 1);
+    players[id] = {};
 }
 
 export {
