@@ -1,4 +1,6 @@
 const movePlayer = require("./movePlayer.js");
+const GameState = require("../gameState");
+const broadcast = require("../WebSocketServer/broadcast.js");
 
 function processMessage(connections, playerId, datagram) {
     if (datagram.type !== 'utf8') return;
@@ -12,7 +14,13 @@ function processMessage(connections, playerId, datagram) {
             movePlayer(connections, playerId, input);
             break;
         case "shot":
-            console.log(input.coordinates);
+            // console.log(input.id);
+            if (GameState.evaluateShot(GameState.getPlayers(), input.id)) {
+                broadcast(connections, {
+                    "type": "update-score",
+                    "players": GameState.getPlayers()
+                });
+            }
             break;
     }
 }

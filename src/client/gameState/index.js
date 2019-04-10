@@ -1,6 +1,6 @@
 let doc = document;
 let arena;
-let player;
+let playerId;
 let players = [];
 
 function setDocument(d){
@@ -9,28 +9,30 @@ function setDocument(d){
 }
 
 function setPlayer(id){
-    player = id;
+    playerId = id;
 }
 
 function getPlayer(){
-    return player;
+    return playerId;
 }
 
 function getPlayers(){
     return players;
 }
 
-function addPlayer(id, player){
-    console.log(player);
+function addPlayer(player){
+    // console.log(player);
+    let id = player.id
     if (!isPresent(id)){
+
         players[id] = player;
         players[id].element = doc.createElement("div");
 
-        players[id].element.setAttribute("id", id);
-        players[id].element.classList.add("player");
-        players[id].element.style.width = players[id].element.style.height = players[id].radius*2 + "px";
-        arena.appendChild(players[id].element);
-        setPlayerPosition(id, player.coordinates);
+        players[player.id].element.setAttribute("id", id);
+        players[player.id].element.classList.add("player");
+        players[player.id].element.style.width = players[player.id].element.style.height = players[player.id].radius*2 + "px";
+        arena.appendChild(players[player.id].element);
+        setPlayerPosition(player.id, player.coordinates);
     }
 }
 
@@ -38,7 +40,7 @@ function setPlayers(pls){
     if (pls) {
         pls.forEach((p, index) => {
             if (p != undefined){
-                addPlayer(index, p);
+                addPlayer(p);
             }
         });
     }
@@ -67,6 +69,10 @@ function removePlayer(id){
     players[id] = {};
 }
 
+function updateScores(ps){
+    console.log(ps);
+}
+
 export {
     setPlayer,
     getPlayer,
@@ -75,5 +81,6 @@ export {
     addPlayer,
     removePlayer,
     setDocument,
-    getPlayers
+    getPlayers,
+    updateScores
 };

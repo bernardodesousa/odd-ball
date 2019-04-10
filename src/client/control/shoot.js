@@ -1,10 +1,10 @@
 import { connection } from '../connection/index.js';
-import { calculatePosition } from './calculatePosition.js';
+import { getPlayer } from '../gameState/index.js';
 
 function shoot(e) {
     let instruction = {
         type: "shot",
-        coordinates: calculatePosition(e)
+        id: getPlayer()
     }
 
     connection.send(JSON.stringify(instruction));

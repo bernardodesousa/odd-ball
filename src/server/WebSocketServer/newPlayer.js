@@ -14,11 +14,15 @@ function newPlayer(connections, connectionRequest) {
     connection = connectionRequest.accept(acceptedProtocol, connectionRequest.origin);
     playerId = connections.push(connection) - 1;
 
+    console.log(playerId);
+
     GameState.addPlayer(playerId, "Mary");
     GameState.setCoordinates(playerId, [0, 0]);
 
     attachEventFunctionsTo(connection, connections, playerId);
-    broadcast(connections, {"type": "new-player", "id": playerId, "players": GameState.getPlayers()});
+    
+    connection.send(JSON.stringify({"type": "welcome", "id": playerId, "players": GameState.getPlayers()}));
+    broadcast(connections, {"type": "new-player", "player": GameState.getPlayer(playerId)});
     logPartySize(connections);
 }
 
