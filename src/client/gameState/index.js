@@ -43,8 +43,8 @@ function setPlayers(pls){
 
 function setPlayerPosition(id, coordinates) {
     if (id != undefined && coordinates){
-        players[id].style.top = (arena.clientHeight * coordinates[1]) + "px";
-        players[id].style.left = (arena.clientWidth * coordinates[0]) + "px";
+        players[id].style.top = (arena.clientHeight * coordinates[1] - players[id].clientHeight/2) + "px";
+        players[id].style.left = (arena.clientWidth * coordinates[0] - players[id].clientWidth/2) + "px";
     }
 }
 

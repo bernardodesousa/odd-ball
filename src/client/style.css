@@ -4,9 +4,9 @@ body {
 
 #arena {
 	background-color: black;
-	width: 90vw;
-	height: 90vh;
-	margin: 5vh auto;
+	width: 500px;
+	height: 500px;
+	margin: auto;
 }
 
 .player {
