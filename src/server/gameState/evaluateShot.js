@@ -5,6 +5,7 @@ function evaluateShot(players, shooterId) {
         let atLeastOneKill = false;
 
         for (let i=0; i<players.length; i++) {
+            if (!players[i].coordinates) continue;
             if (shooterId != i) {
                 let t = [
                     players[i].coordinates[0] * 500,
@@ -25,8 +26,6 @@ function evaluateShot(players, shooterId) {
                     players[i].status = "dead";
                     players[shooterId].kills++;
                     atLeastOneKill = true
-                } else {
-                    console.log("MISS");
                 }
             }
         }

@@ -30,6 +30,15 @@ function addPlayer(player){
 
         players[player.id].element.setAttribute("id", id);
         players[player.id].element.classList.add("player");
+
+        if (players[player.id].hunter == true){
+            players[player.id].element.classList.add("hunter");
+        }
+
+        if (players[player.id].status == 'dead'){
+            players[player.id].element.classList.add("dead");
+        }
+
         players[player.id].element.style.width = players[player.id].element.style.height = players[player.id].radius*2 + "px";
         arena.appendChild(players[player.id].element);
         setPlayerPosition(player.id, player.coordinates);
@@ -48,11 +57,8 @@ function setPlayers(pls){
 
 function setPlayerPosition(id, coordinates) {
     if (id != undefined && coordinates){
-
         players[id].element.style.top = ((arena.clientHeight * coordinates[1] + arena.getBoundingClientRect().top) - players[id].element.clientHeight/2) + "px";
         players[id].element.style.left = ((arena.clientWidth * coordinates[0] + arena.getBoundingClientRect().left) - players[id].element.clientWidth/2) + "px";
-        // players[id].element.style.top = (arena.clientHeight * coordinates[1] - players[id].element.clientHeight/2) + "px";
-        // players[id].element.style.left = (arena.clientWidth * coordinates[0] - players[id].element.clientWidth/2) + "px";
     }
 }
 
@@ -70,7 +76,18 @@ function removePlayer(id){
 }
 
 function updateScores(ps){
-    console.log(ps);
+    ps.forEach((p, i) => {
+        players[i].kills = p.kills;
+        players[i].deaths = p.deaths;
+        players[i].status = p.status;
+        if (players[i].status == "dead"){
+            players[i].element.classList.add("dead");
+        }
+    });
+}
+
+function getStatus(){
+    return players[playerId].status;
 }
 
 export {
@@ -82,5 +99,6 @@ export {
     removePlayer,
     setDocument,
     getPlayers,
-    updateScores
+    updateScores,
+    getStatus
 };

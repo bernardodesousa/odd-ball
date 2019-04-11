@@ -1,17 +1,19 @@
 const evaluateShot = require("./evaluateShot.js");
+const names = require("./characterNames.js");
 
 let players = [];
 
 // temp
 let first = true;
+let n = 0;
 
-function addPlayer(id, name) {
+function addPlayer(id) {
     if (first){
         players[id] = {
             id: id,
-            name: "Mary",
+            name: names[n++],
             coordinates: [0, 0],
-            radius: 50,
+            radius: 30,
             hunter: true,
             deaths: 0,
             kills: 0,
@@ -22,7 +24,7 @@ function addPlayer(id, name) {
     } else {
         players[id] = {
             id: id,
-            name: "John",
+            name: names[n++],
             coordinates: [0, 0],
             radius: 10,
             hunter: false,
@@ -31,6 +33,8 @@ function addPlayer(id, name) {
             status: "ready"
         }
     }
+
+    return players[id].name;
 }
 
 function removePlayer(id) {

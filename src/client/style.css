@@ -14,3 +14,11 @@ body {
     border-radius: 50%;
     background-color: white;
 }
+
+.hunter {
+    background-color: rgb(226, 145, 107);
+}
+
+.dead {
+    background-color: #1f1f1f;
+}
