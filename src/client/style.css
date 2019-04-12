@@ -16,10 +16,26 @@ body {
     pointer-events: none;
 }
 
+.player > p {
+    color: gray;
+    font-family: sans-serif;
+    font-size: 12px;
+    width: max-content;
+    position: relative;
+    font-weight: bold;
+    left: 30px;
+}
+
 .hunter {
     background-color: rgb(226, 145, 107);
 }
 
 .dead {
     background-color: #1f1f1f;
+}
+
+#changeNameContainer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }

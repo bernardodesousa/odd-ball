@@ -1,11 +1,19 @@
-let doc = document;
+import { updateName } from '../control/updateName.js';
+
 let arena;
 let playerId;
 let players = [];
+let nameInput;
+let updateNameButton;
 
-function setDocument(d){
-    doc = d;
-    arena = doc.getElementById("arena");
+function setDOMPointers(){
+    arena = document.getElementById("arena");
+    nameInput = document.getElementById("changeNameInput");
+    updateNameButton = document.getElementById("changeNameButton");
+}
+
+function setEventListeners () {
+    updateNameButton.onclick = () => { updateName(nameInput.value) };
 }
 
 function setPlayer(id){
@@ -21,13 +29,12 @@ function getPlayers(){
 }
 
 function addPlayer(player){
-    // console.log(player);
     let id = player.id
     if (!isPresent(id)){
 
         players[id] = player;
-        players[id].element = doc.createElement("div");
-
+        
+        players[id].element = document.createElement("div");
         players[player.id].element.setAttribute("id", id);
         players[player.id].element.classList.add("player");
 
@@ -36,6 +43,12 @@ function addPlayer(player){
         }
 
         players[player.id].element.style.width = players[player.id].element.style.height = players[player.id].radius*2 + "px";
+
+        // create player label
+        players[id].label = document.createElement("p");
+        players[id].label.innerText = players[id].name;
+        players[player.id].element.appendChild(players[id].label);
+
         arena.appendChild(players[player.id].element);
         setPlayerPosition(player.id, player.coordinates);
     }
@@ -88,7 +101,6 @@ function getStatus(){
 }
 
 function revivePlayer(id){
-    console.log(players[id]);
     players[id].alive = true;
     players[id].element.classList.remove("dead");
 }
@@ -98,6 +110,11 @@ function resizePlayer(id, radius) {
     players[id].element.style.width = players[id].element.style.height = radius*2 + "px";
 }
 
+function setPlayerName(id, name) {
+    players[id].name = name;
+    players[id].label.innerText = name;
+}
+
 export {
     setPlayer,
     getPlayer,
@@ -105,10 +122,12 @@ export {
     setPlayers,
     addPlayer,
     removePlayer,
-    setDocument,
+    setDOMPointers,
     getPlayers,
     updateScores,
     getStatus,
     revivePlayer,
-    resizePlayer
+    resizePlayer,
+    setEventListeners,
+    setPlayerName
 };

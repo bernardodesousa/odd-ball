@@ -54,4 +54,8 @@ function setCoordinates(id, coordinates){
     players[id].coordinates = coordinates;
 }
 
-module.exports = { addPlayer, removePlayer, getPlayer, evaluateShot, getPlayers, setCoordinates };
+function setName(id, name) {
+    players[id].name = name;
+}
+
+module.exports = { addPlayer, removePlayer, getPlayer, evaluateShot, getPlayers, setCoordinates, setName };

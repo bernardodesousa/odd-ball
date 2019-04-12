@@ -22,6 +22,14 @@ function processMessage(connections, playerId, datagram) {
                 });
             }
             break;
+        case "update-name":
+            GameState.setName(input.id, input.name);
+            broadcast(connections, {
+                "type": "update-name",
+                "id": input.id,
+                "name": input.name
+            });
+            break;
     }
 }
 

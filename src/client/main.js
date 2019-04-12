@@ -1,4 +1,5 @@
 import './control/index.js';
-import { setDocument } from './gameState/index.js';
+import { setDOMPointers, setEventListeners } from './gameState/index.js';
 
-setDocument(document);
+setDOMPointers();
+setEventListeners();
