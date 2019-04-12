@@ -18,7 +18,7 @@ function evaluateShot(connections, players, shooterId) {
                 players[shooterId].coordinates[1] * 500
             ];
 
-            if (isInside(
+            if (players[i].alive && isInside(
                 {center: t, radius: players[i].radius},
                 {center: h, radius: players[shooterId].radius}
             )) {

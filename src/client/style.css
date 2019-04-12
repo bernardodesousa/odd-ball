@@ -1,5 +1,6 @@
 body {
     background-color: rgb(94, 94, 94);
+    font-family: sans-serif;
 }
 
 #arena {
@@ -17,13 +18,17 @@ body {
 }
 
 .player > p {
-    color: gray;
-    font-family: sans-serif;
+    color: rgba(53, 53, 53, 0.74);
     font-size: 12px;
     width: max-content;
     position: relative;
     font-weight: bold;
     left: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .hunter {
@@ -38,4 +43,14 @@ body {
     position: fixed;
     bottom: 10px;
     left: 10px;
+}
+
+#scoreBoard {
+    color: lime;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #404040;
+    padding: 4px 16px;
+    line-height: 9px;
 }

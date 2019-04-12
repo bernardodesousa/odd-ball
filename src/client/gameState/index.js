@@ -1,12 +1,14 @@
 import { updateName } from '../control/updateName.js';
 
 let arena;
+let board;
 let playerId;
 let players = [];
 let nameInput;
 let updateNameButton;
 
 function setDOMPointers(){
+    board = document.getElementById("scoreBoard");
     arena = document.getElementById("arena");
     nameInput = document.getElementById("changeNameInput");
     updateNameButton = document.getElementById("changeNameButton");
@@ -48,6 +50,11 @@ function addPlayer(player){
         players[id].label = document.createElement("p");
         players[id].label.innerText = players[id].name;
         players[player.id].element.appendChild(players[id].label);
+
+        // add score board entry
+        players[id].boardEntry = document.createElement("p");
+        players[id].boardEntry.innerText = `${players[id].name}: ${players[id].kills - players[id].deaths}`;
+        board.appendChild(players[id].boardEntry);
 
         arena.appendChild(players[player.id].element);
         setPlayerPosition(player.id, player.coordinates);
@@ -92,6 +99,8 @@ function updateScores(ps){
         if (!players[i].alive){
             players[i].element.classList.add("dead");
         }
+
+        players[i].boardEntry.innerText = `${players[i].name}: ${players[i].kills - players[i].deaths}`;
     });
 }
 
@@ -113,6 +122,7 @@ function resizePlayer(id, radius) {
 function setPlayerName(id, name) {
     players[id].name = name;
     players[id].label.innerText = name;
+    players[id].boardEntry.innerText = `${players[id].name}: ${players[id].kills - players[id].deaths}`;
 }
 
 export {

@@ -48,6 +48,7 @@ function processMessage(msg) {
             // console.log("Resize player!");
             // console.log(instruction);
             resizePlayer(instruction.id, instruction.radius);
+            setPlayerPosition(instruction.id, instruction.coordinates);
             break;
         case "update-name":
             console.log("update-name");

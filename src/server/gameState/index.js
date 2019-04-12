@@ -30,7 +30,8 @@ function resizePlayer(connections, id, timer) {
     broadcast(connections, {
         type: "resize-player",
         id: id,
-        radius: players[id].radius
+        radius: players[id].radius,
+        coordinates: players[id].coordinates
     });
 
     timer = setInterval(() => {
