@@ -16,8 +16,8 @@ function newPlayer(connections, connectionRequest) {
     playerName = GameState.addPlayer(connections, playerId);
     GameState.setCoordinates(playerId, [0.5, 0.5]);
 
-    attachEventFunctionsTo(connection, connections, playerId);
-    
+    attachEventFunctionsTo(connections, playerId);
+
     connection.send(JSON.stringify({"type": "welcome", "id": playerId, "players": GameState.getPlayers()}));
     broadcast(connections, {"type": "new-player", "player": GameState.getPlayer(playerId)});
 

@@ -1,22 +1,13 @@
 const evaluateShot = require("./evaluateShot.js");
-const names = require("./characterNames.js");
 const randBetween = require("./randBetween.js");
 const broadcast = require("../WebSocketServer/broadcast.js");
+const createPlayer = require("./createPlayer.js");
 
 let players = [];
-let n = 0;
 
 function addPlayer(connections, id) {
-    players[id] = {
-        id: id,
-        name: names[n++],
-        coordinates: [0, 0],
-        radius: randBetween(2, 30),
-        deaths: 0,
-        kills: 0,
-        alive: true,
-    }
-    
+    players[id] = createPlayer(id, players.length);
+
     let timer;
     resizePlayer(connections, id, timer);
 
