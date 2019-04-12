@@ -1,40 +1,41 @@
 const evaluateShot = require("./evaluateShot.js");
 const names = require("./characterNames.js");
+const randBetween = require("./randBetween.js");
+const broadcast = require("../WebSocketServer/broadcast.js");
 
 let players = [];
-
-// temp
-let first = true;
 let n = 0;
 
-function addPlayer(id) {
-    if (first){
-        players[id] = {
-            id: id,
-            name: names[n++],
-            coordinates: [0, 0],
-            radius: 30,
-            hunter: true,
-            deaths: 0,
-            kills: 0,
-            status: "ready"
-        }
-
-        first = false;
-    } else {
-        players[id] = {
-            id: id,
-            name: names[n++],
-            coordinates: [0, 0],
-            radius: 10,
-            hunter: false,
-            deaths: 0,
-            kills: 0,
-            status: "ready"
-        }
+function addPlayer(connections, id) {
+    players[id] = {
+        id: id,
+        name: names[n++],
+        coordinates: [0, 0],
+        radius: randBetween(2, 30),
+        deaths: 0,
+        kills: 0,
+        alive: true,
     }
+    
+    let timer;
+    resizePlayer(connections, id, timer);
 
     return players[id].name;
+}
+
+function resizePlayer(connections, id, timer) {
+    if (timer) clearInterval(timer);
+
+    players[id].radius = randBetween(2, 30);
+    broadcast(connections, {
+        type: "resize-player",
+        id: id,
+        radius: players[id].radius
+    });
+
+    timer = setInterval(() => {
+        resizePlayer(connections, id, timer)
+    }, randBetween(8000, 10000));
 }
 
 function removePlayer(id) {

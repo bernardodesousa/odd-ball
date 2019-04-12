@@ -13,7 +13,7 @@ function newPlayer(connections, connectionRequest) {
     connection = connectionRequest.accept(acceptedProtocol, connectionRequest.origin);
     playerId = connections.push(connection) - 1;
 
-    playerName = GameState.addPlayer(playerId);
+    playerName = GameState.addPlayer(connections, playerId);
     GameState.setCoordinates(playerId, [0.5, 0.5]);
 
     attachEventFunctionsTo(connection, connections, playerId);

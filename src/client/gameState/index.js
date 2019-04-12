@@ -31,11 +31,7 @@ function addPlayer(player){
         players[player.id].element.setAttribute("id", id);
         players[player.id].element.classList.add("player");
 
-        if (players[player.id].hunter == true){
-            players[player.id].element.classList.add("hunter");
-        }
-
-        if (players[player.id].status == 'dead'){
+        if (!players[player.id].alive){
             players[player.id].element.classList.add("dead");
         }
 
@@ -79,15 +75,27 @@ function updateScores(ps){
     ps.forEach((p, i) => {
         players[i].kills = p.kills;
         players[i].deaths = p.deaths;
-        players[i].status = p.status;
-        if (players[i].status == "dead"){
+        players[i].alive = p.alive;
+        if (!players[i].alive){
             players[i].element.classList.add("dead");
         }
     });
 }
 
 function getStatus(){
-    return players[playerId].status;
+    if (players[playerId].alive) return "ready";
+    return "dead";
+}
+
+function revivePlayer(id){
+    console.log(players[id]);
+    players[id].alive = true;
+    players[id].element.classList.remove("dead");
+}
+
+function resizePlayer(id, radius) {
+    players[id].radius = radius;
+    players[id].element.style.width = players[id].element.style.height = radius*2 + "px";
 }
 
 export {
@@ -100,5 +108,7 @@ export {
     setDocument,
     getPlayers,
     updateScores,
-    getStatus
+    getStatus,
+    revivePlayer,
+    resizePlayer
 };

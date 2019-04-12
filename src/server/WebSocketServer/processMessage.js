@@ -15,7 +15,7 @@ function processMessage(connections, playerId, datagram) {
             break;
         case "shot":
             // console.log(input.id);
-            if (GameState.evaluateShot(GameState.getPlayers(), input.id)) {
+            if (GameState.evaluateShot(connections, GameState.getPlayers(), input.id)) {
                 broadcast(connections, {
                     "type": "update-score",
                     "players": GameState.getPlayers()

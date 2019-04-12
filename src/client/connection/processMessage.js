@@ -1,4 +1,13 @@
-import { setPlayer, setPlayers, setPlayerPosition, addPlayer, removePlayer, updateScores } from '../gameState/index.js';
+import {
+    setPlayer,
+    setPlayers,
+    setPlayerPosition,
+    addPlayer,
+    removePlayer,
+    updateScores,
+    revivePlayer,
+    resizePlayer
+} from '../gameState/index.js';
 
 let instruction = {};
 
@@ -28,6 +37,17 @@ function processMessage(msg) {
         case "update-score":
             console.log("Update Score!");
             updateScores(instruction.players);
+            break;
+        case "revive-player":
+            console.log("Revive player!");
+            console.log(instruction);
+            revivePlayer(instruction.id);
+            break;
+        case "resize-player":
+            console.log("Resize player!");
+            console.log(instruction);
+            resizePlayer(instruction.id, instruction.radius);
+            break;
     }
 }
 
