@@ -35,7 +35,10 @@
     "puppeteer": "^1.14.0"
   },
   "jest": {
-    "preset": "jest-puppeteer"
+    "preset": "jest-puppeteer",
+    "watchPathIgnorePatterns": [
+      "node_modules"
+    ]
   },
   "babel": {
     "env": {

@@ -21,30 +21,19 @@ describe('GameState', () => {
         expect(getPlayer()).toBe(9);
     });
 
-    test("Add players individually", () => {
-        document.body.innerHTML = `<div id="arena"></div>`;
-        setDocument(document);
-        players.forEach(player => {
-            addPlayer(player);
-        })
+    // test("Remove player individually", () => {
+    //     document.body.innerHTML = `<div id="arena"><div id="0"></div><div id="1"></div><div id="2"></div></div>`;
+    //     setDocument(document);
+    //     removePlayer('2');
+    //     expect(document.getElementById("arena").childNodes.length).toBe(2);
+    // });
 
-        expect(document.getElementById("arena").childNodes.length).toBe(players.length);
-        
-    });
-
-    test("Remove player individually", () => {
-        document.body.innerHTML = `<div id="arena"><div id="0"></div><div id="1"></div><div id="2"></div></div>`;
-        setDocument(document);
-        removePlayer('2');
-        expect(document.getElementById("arena").childNodes.length).toBe(2);
-    });
-
-    test("Remove player individually", () => {
-        document.body.innerHTML = `<div id="arena"><div id="0"></div><div id="1"></div><div id="2"></div></div>`;
-        setDocument(document);
-        removePlayer('0');
-        removePlayer('1');
-        removePlayer('2');
-        expect(document.getElementById("arena").childNodes.length).toBe(0);
-    });
+    // test("Remove player individually", () => {
+    //     document.body.innerHTML = `<div id="arena"><div id="0"></div><div id="1"></div><div id="2"></div></div>`;
+    //     setDocument(document);
+    //     removePlayer('0');
+    //     removePlayer('1');
+    //     removePlayer('2');
+    //     expect(document.getElementById("arena").childNodes.length).toBe(0);
+    // });
 });
