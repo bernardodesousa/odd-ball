@@ -1,33 +1,12 @@
 const evaluateShot = require("./evaluateShot.js");
-const randBetween = require("./randBetween.js");
-const broadcast = require("../WebSocketServer/broadcast.js");
 const createPlayer = require("./createPlayer.js");
 
 let players = [];
+let timers = [];
 
 function addPlayer(connections, id) {
-    players[id] = createPlayer(id, players.length);
-
-    let timer;
-    resizePlayer(connections, id, timer);
-
+    players[id] = createPlayer(connections, id, players, timers);
     return players[id].name;
-}
-
-function resizePlayer(connections, id, timer) {
-    if (timer) clearInterval(timer);
-
-    players[id].radius = randBetween(2, 30);
-    broadcast(connections, {
-        type: "resize-player",
-        id: id,
-        radius: players[id].radius,
-        coordinates: players[id].coordinates
-    });
-
-    timer = setInterval(() => {
-        resizePlayer(connections, id, timer)
-    }, randBetween(8000, 10000));
 }
 
 function removePlayer(id) {
@@ -50,4 +29,12 @@ function setName(id, name) {
     players[id].name = name;
 }
 
-module.exports = { addPlayer, removePlayer, getPlayer, evaluateShot, getPlayers, setCoordinates, setName };
+module.exports = {
+    addPlayer,
+    removePlayer,
+    getPlayer,
+    evaluateShot,
+    getPlayers,
+    setCoordinates,
+    setName
+};

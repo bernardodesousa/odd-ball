@@ -18,7 +18,7 @@ function staticServer (port) {
         const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');
         let pathname = path.join(`${__dirname}/../client/`, sanitizePath);
 
-        fs.exists(pathname, function (exist) {
+        fs.exists(pathname, exist => {
             if(!exist) {
                 res.statusCode = 404;
                 res.end(`File ${pathname} not found!`);
@@ -29,7 +29,7 @@ function staticServer (port) {
                 pathname += '/index.html';
             }
 
-            fs.readFile(pathname, function(err, data){
+            fs.readFile(pathname, (err, data) => {
                 if(err){
                     res.statusCode = 500;
                     res.end(`Error getting the file: ${err}.`);

@@ -1,5 +1,5 @@
 const names = [
-    "Aayla Secura",
+    "Aayla",
     "River Tam",
     "Yoda",
     "Ripley",

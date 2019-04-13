@@ -1,6 +1,5 @@
 const isInside = require("./isInside.js");
-const revive = require("./revive.js");
-const randBetween = require("../gameState/randBetween.js");
+const killPlayer = require("./killPlayer.js");
 
 function evaluateShot(connections, players, shooterId) {
     let atLeastOneKill = false;
@@ -22,15 +21,10 @@ function evaluateShot(connections, players, shooterId) {
                 {center: t, radius: players[i].radius},
                 {center: h, radius: players[shooterId].radius}
             )) {
-                console.log(players[shooterId].name + " KILLS " + players[i].name);
-                players[i].deaths++;
-                players[i].alive = false;
+                killPlayer(connections, players, i);
                 players[shooterId].kills++;
-                setTimeout(() => {
-                    revive(connections, players[i]);
-                }, randBetween(2000, 2500));
-
                 atLeastOneKill = true
+                console.log(players[shooterId].name + " KILLS " + players[i].name);
             }
         }
     }

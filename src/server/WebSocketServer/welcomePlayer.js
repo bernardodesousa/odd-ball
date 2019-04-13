@@ -5,7 +5,7 @@ const GameState = require("../gameState");
 
 const acceptedProtocol = null;
 
-function newPlayer(connections, connectionRequest) {
+function welcomePlayer(connections, connectionRequest) {
     let connection;
     let playerId;
     let playerName;
@@ -18,11 +18,16 @@ function newPlayer(connections, connectionRequest) {
 
     attachEventFunctionsTo(connections, playerId);
 
-    connection.send(JSON.stringify({"type": "welcome", "id": playerId, "players": GameState.getPlayers()}));
+    connection.send(JSON.stringify({
+        "type": "welcome",
+        "id": playerId,
+        "players": GameState.getPlayers()
+    }));
+
     broadcast(connections, {"type": "new-player", "player": GameState.getPlayer(playerId)});
 
-    console.log("Welcome, " + playerName + " from " + connectionRequest.origin);
+    console.log("Welcome, " + playerName + " from " + connectionRequest.remoteAddress);
     logPartySize(connections);
 }
 
-module.exports = newPlayer;
+module.exports = welcomePlayer;
