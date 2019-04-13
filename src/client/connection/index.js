@@ -1,4 +1,4 @@
-import { processMessage } from './processMessage.js';
+import { processDatagram } from './processDatagram.js';
 
 window.WebSocket = window.WebSocket || window.MozWebSocket;
 let connection = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);
@@ -11,7 +11,7 @@ connection.onerror = error => {
     console.error(error);
 };
 
-connection.onmessage = processMessage;
+connection.onmessage = processDatagram;
 
 setInterval(() => {
     if (connection.readyState !== 1) {

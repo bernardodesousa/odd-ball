@@ -11,4 +11,4 @@ function updateName(name) {
     connection.send(JSON.stringify(instruction));
 }
 
-export { updateName };
+export default updateName;
