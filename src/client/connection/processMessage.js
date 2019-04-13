@@ -7,7 +7,8 @@ import {
     updateScores,
     revivePlayer,
     resizePlayer,
-    setPlayerName
+    setPlayerName,
+    setArenaSize
 } from '../gameState/index.js';
 
 let instruction = {};
@@ -31,9 +32,10 @@ function processMessage(msg) {
             addPlayer(instruction.player);
             break;
         case "welcome":
-            // console.log("Welcome! Your id is "+instruction.id);
+            console.log("Welcome!", instruction);
             setPlayer(instruction.id);
             setPlayers(instruction.players);
+            setArenaSize(instruction.arenaSize);
             break;
         case "update-score":
             // console.log("Update Score!");

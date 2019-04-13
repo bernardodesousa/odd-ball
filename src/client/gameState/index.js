@@ -125,6 +125,10 @@ function setPlayerName(id, name) {
     players[id].boardEntry.innerText = `${players[id].name}: ${players[id].kills - players[id].deaths}`;
 }
 
+function setArenaSize(size) {
+    arena.style.width = arena.style.height = size+"px";
+}
+
 export {
     setPlayer,
     getPlayer,
@@ -139,5 +143,6 @@ export {
     revivePlayer,
     resizePlayer,
     setEventListeners,
-    setPlayerName
+    setPlayerName,
+    setArenaSize
 };

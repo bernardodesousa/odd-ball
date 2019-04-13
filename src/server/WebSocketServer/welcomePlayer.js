@@ -1,3 +1,4 @@
+const arenaSize = require("../config.js").arenaSize;
 const broadcast = require('./broadcast.js');
 const logPartySize = require("./logPartySize.js");
 const attachEventFunctionsTo = require("./attachEventFunctionsTo.js");
@@ -21,7 +22,8 @@ function welcomePlayer(connections, connectionRequest) {
     connection.send(JSON.stringify({
         "type": "welcome",
         "id": playerId,
-        "players": GameState.getPlayers()
+        "players": GameState.getPlayers(),
+        "arenaSize": arenaSize
     }));
 
     broadcast(connections, {"type": "new-player", "player": GameState.getPlayer(playerId)});

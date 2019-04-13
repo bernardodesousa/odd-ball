@@ -1,5 +1,6 @@
 const isInside = require("./isInside.js");
 const killPlayer = require("./killPlayer.js");
+const absoluteCoordinates = require("./absoluteCoordinates.js");
 
 function evaluateShot(connections, players, shooterId) {
     let atLeastOneKill = false;
@@ -7,19 +8,9 @@ function evaluateShot(connections, players, shooterId) {
     for (let i=0; i<players.length; i++) {
         if (!players[i].coordinates) continue;
         if (shooterId != i) {
-            let t = [
-                players[i].coordinates[0] * 500,
-                players[i].coordinates[1] * 500
-            ];
-
-            let h = [
-                players[shooterId].coordinates[0] * 500,
-                players[shooterId].coordinates[1] * 500
-            ];
-
             if (players[i].alive && isInside(
-                {center: t, radius: players[i].radius},
-                {center: h, radius: players[shooterId].radius}
+                {center: absoluteCoordinates(players[i].coordinates), radius: players[i].radius},
+                {center: absoluteCoordinates(players[shooterId].coordinates), radius: players[shooterId].radius}
             )) {
                 killPlayer(connections, players, i);
                 players[shooterId].kills++;

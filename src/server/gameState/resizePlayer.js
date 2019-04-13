@@ -1,10 +1,11 @@
+const { playerMinRadius, playerMaxRadius, resizeIntervalMin, resizeIntervalMax } = require("../config.js");
 let randBetween = require("./randBetween.js");
 let broadcast = require("../WebSocketServer/broadcast.js");
 
-function resizePlayer(connections, id, players, timers) {
-    if (timers[id]) clearInterval(timers[id]);
+function resizePlayer(connections, id, players, resizeTimers) {
+    if (resizeTimers[id]) clearInterval(resizeTimers[id]);
 
-    players[id].radius = randBetween(2, 30);
+    players[id].radius = randBetween(playerMinRadius, playerMaxRadius);
     broadcast(connections, {
         type: "resize-player",
         id: id,
@@ -12,9 +13,9 @@ function resizePlayer(connections, id, players, timers) {
         coordinates: players[id].coordinates
     });
 
-    timers[id] = setInterval(() => {
-        resizePlayer(connections, id, players, timers)
-    }, randBetween(8000, 10000));
+    resizeTimers[id] = setInterval(() => {
+        resizePlayer(connections, id, players, resizeTimers)
+    }, randBetween(resizeIntervalMin, resizeIntervalMax));
 }
 
 module.exports = resizePlayer;

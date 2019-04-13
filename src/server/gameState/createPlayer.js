@@ -1,17 +1,17 @@
-const names = require("./characterNames.js");
 const randBetween = require("./randBetween.js");
 const resizePlayer = require("./resizePlayer.js");
+const config = require("../config.js");
 
-function createPlayer(connections, id, players, timers) {
-    timers[id] = setInterval(() => {
-        resizePlayer(connections, id, players, timers)
-    }, randBetween(8000, 10000));
+function createPlayer(connections, id, players, resizeTimers) {
+    resizeTimers[id] = setInterval(() => {
+        resizePlayer(connections, id, players, resizeTimers)
+    }, randBetween(config.resizeIntervalMin, config.resizeIntervalMax));
 
     let player = {
         id: id,
-        name: names[players.length],
-        coordinates: [0, 0],
-        radius: randBetween(2, 30),
+        name: config.names[players.length],
+        coordinates: config.initialCoordinates,
+        radius: randBetween(config.playerMinRadius, config.playerMaxRadius),
         deaths: 0,
         kills: 0,
         alive: true

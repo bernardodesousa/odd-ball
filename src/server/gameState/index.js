@@ -2,10 +2,10 @@ const evaluateShot = require("./evaluateShot.js");
 const createPlayer = require("./createPlayer.js");
 
 let players = [];
-let timers = [];
+let resizeTimers = [];
 
 function addPlayer(connections, id) {
-    players[id] = createPlayer(connections, id, players, timers);
+    players[id] = createPlayer(connections, id, players, resizeTimers);
     return players[id].name;
 }
 
