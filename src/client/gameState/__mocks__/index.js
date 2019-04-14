@@ -1,25 +1,14 @@
-function getBoard() {}
-function setDOMPointers(){}
-function setEventListeners () {}
-function setPlayer(id){}
-function getPlayer(){}
-function getPlayers(){}
-function removePlayer(id){}
-function getStatus(){}
-function revivePlayer(id){}
-function resizePlayer(id, radius) {}
-function setArenaSize(size) {}
+const players = [
+    {id: 0, coordinates: [0, 0]},
+    {id: 1, coordinates: [0, 0]},
+    {id: 2, coordinates: [0, 0]},
+    {id: 3, coordinates: [0, 0]},
+    {id: 4, coordinates: [0, 0]},
+    {id: 5, coordinates: [0, 0]}
+];
 
-export {
-    setPlayer,
-    getPlayer,
-    removePlayer,
-    setDOMPointers,
-    getPlayers,
-    getStatus,
-    revivePlayer,
-    resizePlayer,
-    setEventListeners,
-    setArenaSize,
-    getBoard
-};
+function getPlayers(){
+    return players;
+}
+
+export { getPlayers };
