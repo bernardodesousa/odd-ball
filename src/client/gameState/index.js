@@ -3,7 +3,7 @@ import addPlayer from './addPlayer.js';
 import setPlayerPosition from './setPlayerPosition.js';
 import updateScores from './updateScores.js';
 import setPlayerName from './setPlayerName.js';
-import setPlayers from './setPlayers.js';
+import addPlayers from './addPlayers.js';
 
 let arena;
 let board;
@@ -11,14 +11,19 @@ let playerId;
 let players = [];
 let nameInput;
 
-function getBoard() { return board }
-function getArena() { return arena }
+function setPlayers(p) {
+    players = p;
+}
 
 function setDOMPointers(){
     board = document.getElementById("scoreBoard");
     arena = document.getElementById("arena");
     nameInput = document.getElementById("changeNameInput");
 }
+
+function getBoard() { return board }
+function getArena() { return arena }
+function getPlayers() { return players }
 
 function setEventListeners () {
     document.getElementById("changeNameButton").onclick = () => { updateName(nameInput.value) };
@@ -30,10 +35,6 @@ function setPlayer(id){
 
 function getPlayer(){
     return playerId;
-}
-
-function getPlayers(){
-    return players;
 }
 
 function removePlayer(id){
@@ -65,6 +66,7 @@ export {
     getPlayer,
     setPlayerPosition,
     setPlayers,
+    addPlayers,
     addPlayer,
     removePlayer,
     setDOMPointers,

@@ -17,7 +17,7 @@ function processDatagram(datagram) {
             break;
         case "welcome":
             GameState.setPlayer(message.id);
-            GameState.setPlayers(message.players);
+            GameState.addPlayers(message.players);
             GameState.setArenaSize(message.arenaSize);
             break;
         case "update-score":
