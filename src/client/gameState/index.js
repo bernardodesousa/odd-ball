@@ -12,6 +12,7 @@ let players = [];
 let nameInput;
 
 function getBoard() { return board }
+function getArena() { return arena }
 
 function setDOMPointers(){
     board = document.getElementById("scoreBoard");
@@ -75,5 +76,6 @@ export {
     setEventListeners,
     setPlayerName,
     setArenaSize,
-    getBoard
+    getBoard,
+    getArena
 };

@@ -1,11 +1,13 @@
-import { getPlayers, getBoard, setPlayerPosition } from './index.js';
+import { getPlayers, getBoard, getArena } from './index.js';
 import createAvatar from './createAvatar.js';
 import createLabel from './createLabel.js';
 import createBoardEntry from './createBoardEntry.js';
 import isPresent from './isPresent.js';
+import setPlayerPosition from './setPlayerPosition.js';
 
 function addPlayer (player) {
     let players = getPlayers();
+    let arena = getArena();
 
     if (!isPresent(player.id)){
         players[player.id] = player;
