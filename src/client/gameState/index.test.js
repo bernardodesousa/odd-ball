@@ -43,14 +43,6 @@ jest.mock('./addPlayer.js', () => ({
     default: jest.fn()
 }));
 
-// mock setPlayerPosition function
-// @in id, coordinates
-import setPlayerPosition from './setPlayerPosition.js';
-jest.mock('./setPlayerPosition.js', () => ({
-    __esModule: true,
-    default: jest.fn()
-}));
-
 // mock updateScores function
 // @in scores:player[]
 import updateScores from './updateScores.js';
@@ -89,7 +81,6 @@ describe('GameState', () => {
     test('Exports', () => {
         expect(GameState.setPlayer).toBeInstanceOf(Function);
         expect(GameState.getPlayer).toBeInstanceOf(Function);
-        expect(GameState.setPlayerPosition).toBe(setPlayerPosition);
         expect(GameState.setPlayers).toBeInstanceOf(Function);
         expect(GameState.addPlayers).toBe(addPlayers);
         expect(GameState.addPlayer).toBe(addPlayer);

@@ -1,11 +1,12 @@
 import * as GameState from '../gameState/index.js';
+import setPlayerPosition from '../gameState/setPlayerPosition.js';
 
 function processDatagram(datagram) {
     let message = JSON.parse(datagram.data);
 
     switch (message.type) {
         case "move-player":
-            GameState.setPlayerPosition(message.id, message.coordinates);
+            setPlayerPosition(message.id, message.coordinates);
             break;
         case "enter-player":
             break;
@@ -28,7 +29,7 @@ function processDatagram(datagram) {
             break;
         case "resize-player":
             GameState.resizePlayer(message.id, message.radius);
-            GameState.setPlayerPosition(message.id, message.coordinates);
+            setPlayerPosition(message.id, message.coordinates);
             break;
         case "update-name":
             GameState.setPlayerName(message.id, message.name);

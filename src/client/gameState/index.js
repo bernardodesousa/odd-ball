@@ -1,6 +1,5 @@
 import updateName from '../control/updateName.js';
 import addPlayer from './addPlayer.js';
-import setPlayerPosition from './setPlayerPosition.js';
 import updateScores from './updateScores.js';
 import setPlayerName from './setPlayerName.js';
 import addPlayers from './addPlayers.js';
@@ -64,7 +63,6 @@ function setArenaSize(size) {
 export {
     setPlayer,
     getPlayer,
-    setPlayerPosition,
     setPlayers,
     addPlayers,
     addPlayer,
