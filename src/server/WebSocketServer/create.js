@@ -4,7 +4,7 @@ const welcomePlayer = require("./welcomePlayer.js");
 let connections = [];
 
 function socketServer(HTTPServer) {
-    wsServer = new WebSocketServer({
+    let wsServer = new WebSocketServer({
         httpServer: HTTPServer
     });
 
