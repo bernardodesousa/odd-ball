@@ -9,4 +9,4 @@ function enterArena() {
     connection.send(JSON.stringify(instruction));
 }
 
-export { enterArena }
+export default enterArena;

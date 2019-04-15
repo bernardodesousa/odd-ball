@@ -1,4 +1,4 @@
-import { enterArena } from './enterArena.js';
+import enterArena from './enterArena.js';
 import { sendPosition } from './sendPosition.js';
 import { shoot } from './shoot.js';
 
