@@ -1,7 +1,8 @@
-import { connection } from '../connection/index.js';
+import { getConnection } from '../connection/index.js';
 import { getPlayer } from '../gameState/index.js';
 
 function updateName(name) {
+    let connection = getConnection();
     let instruction = {
         type: "update-name",
         id: getPlayer(),

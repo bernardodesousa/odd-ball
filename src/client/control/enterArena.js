@@ -1,6 +1,7 @@
-import { connection } from '../connection/index.js';
+import { getConnection } from '../connection/index.js';
 
 function enterArena() {
+    let connection = getConnection();
     let instruction = {
         type: "pointer-enter"
     }

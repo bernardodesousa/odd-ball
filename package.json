@@ -32,6 +32,7 @@
     "esdoc-standard-plugin": "^1.0.0",
     "jest": "^24.7.1",
     "jest-puppeteer": "^4.1.0",
+    "mock-socket": "^8.0.5",
     "puppeteer": "^1.14.0"
   },
   "jest": {

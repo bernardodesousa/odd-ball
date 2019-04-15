@@ -39,4 +39,4 @@ function processDatagram(datagram) {
     }
 }
 
-export { processDatagram };
+export default processDatagram;
