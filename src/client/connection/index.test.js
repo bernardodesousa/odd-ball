@@ -18,8 +18,6 @@ describe("Test WebSocket connection", () => {
     const dom = new JSDOM();
     global.document = dom.window.document;
     global.window = dom.window;
-    // window.location.hostname = "mock_hostname";
-    // window.location.port = "4242";
     global.WebSocket = WebSocket;
 
     const fakeURL = 'ws://localhost:4242';
