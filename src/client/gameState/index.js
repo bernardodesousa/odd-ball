@@ -1,3 +1,4 @@
+import attachEventListenersToArena from '../control/attachEventListenersToArena.js';
 import updateName from '../control/updateName.js';
 import addPlayer from './addPlayer.js';
 import updateScores from './updateScores.js';
@@ -26,6 +27,7 @@ function getPlayers() { return players }
 
 function setEventListeners () {
     document.getElementById("changeNameButton").onclick = () => { updateName(nameInput.value) };
+    attachEventListenersToArena();
 }
 
 function setPlayer(id){

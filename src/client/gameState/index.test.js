@@ -27,6 +27,13 @@ mockPlayers.forEach((p, i) => {
     p.avatar = avatar;
 });
 
+// mock control/attachEventListenersToArena function
+import attachEventListenersToArena from '../control/attachEventListenersToArena.js';
+jest.mock('../control/attachEventListenersToArena.js', () => ({
+    __esModule: true,
+    default: jest.fn()
+}));
+
 // mock control/updateName function
 // @in name:string
 import updateName from '../control/updateName.js';
@@ -122,6 +129,7 @@ describe('GameState', () => {
         GameState.setEventListeners();
         expect(spy).toHaveBeenCalledTimes(6);
         expect(document.getElementById("changeNameButton").onclick).toBeInstanceOf(Function);
+        expect(attachEventListenersToArena).toHaveBeenCalledTimes(1);
     });
 
     test('Set/get player index', () => {
