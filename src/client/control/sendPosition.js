@@ -1,5 +1,5 @@
 import { getConnection } from '../connection/index.js';
-import { calculatePosition } from './calculatePosition.js';
+import calculatePosition from './calculatePosition.js';
 import { getStatus } from '../gameState/index.js';
 
 function sendPosition(event) {

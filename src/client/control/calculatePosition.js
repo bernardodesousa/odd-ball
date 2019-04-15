@@ -5,4 +5,4 @@ function calculatePosition(event) {
     return [x, y];
 }
 
-export { calculatePosition };
+export default calculatePosition;
