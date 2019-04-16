@@ -13,9 +13,11 @@
  *      "coordinates"   -> movePlayer
  *      "shot"          -> processShot
  *      "update-name"   -> updateName
- *  - Se a propriedade type não corresponder a nenhum desses casos, imprima "Unknown message type."
+ *  - Se a propriedade type não corresponder a nenhum desses casos,
+ *    imprima"Unknown message type."
  *  - A função movePlayer recebe o vetor de conexões, o id do jogador e a mensagem
  *  - A função processShot recebe o vetor de conexões e a propriedade id da mensagem
- *  - A função updateName recebe o vetor de conexões, a propriedade id da mensagem, e a propriedade name da mensagem
+ *  - A função updateName recebe o vetor de conexões, a propriedade id da mensagem,
+ *    e a propriedade name da mensagem
  * @export processDatagram
  */
