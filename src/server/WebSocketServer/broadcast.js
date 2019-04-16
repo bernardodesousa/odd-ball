@@ -4,6 +4,6 @@
  *  - Percorra o vetor recebido
  *  - para cada conexão cujo atributo connected for true, chame a função send
  *    da conexão.
- *  - A função send recebe o objeto msg stringificado.
+ *  - A função send recebe o objeto msg stringuificado.
  * @export broadcast
  */
