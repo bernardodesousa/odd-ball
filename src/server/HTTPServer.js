@@ -1,3 +1,9 @@
+/** 
+ * Static file server
+ * @param { Number } port - from which the game will be served.
+ * @returns { Object } - reference to the server
+*/
+
 const http = require('http');
 const url = require('url');
 const fs = require('fs');

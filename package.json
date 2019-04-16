@@ -8,8 +8,9 @@
     "test": "npm run test:client && npm run test:server",
     "test:client": "jest --verbose --env=jsdom --testPathIgnorePatterns server/",
     "test:server": "jest --verbose --env=node --testPathIgnorePatterns client/",
-    "generate-docs": "./node_modules/.bin/esdoc",
-    "generate-dependency-graph": "madge ./src -i ./docs/image/dependency-graph.png -l neato"
+    "generate-diagrams": "npm run generate-server-dependency-graph && npm run generate-client-dependency-graph",
+    "generate-server-dependency-graph": "madge ./src/server -i ./diagrams/server-dependency-graph.png -l dot --exclude '(test|mock)'",
+    "generate-client-dependency-graph": "madge ./src/client -i ./diagrams/client-dependency-graph.png -l dot --exclude '(test|mock)'"
   },
   "repository": {
     "type": "git",
@@ -22,14 +23,11 @@
   },
   "homepage": "https://github.com/bernardodesousa/odd-ball#readme",
   "dependencies": {
-    "madge": "^3.4.4",
     "websocket": "^1.0.28"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "esdoc": "^1.1.0",
-    "esdoc-standard-plugin": "^1.0.0",
     "jest": "^24.7.1",
     "jest-puppeteer": "^4.1.0",
     "mock-socket": "^8.0.5",

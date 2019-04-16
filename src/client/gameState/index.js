@@ -1,3 +1,18 @@
+/**
+ * @import attachEventListenersToArena, updateName, addPlayer,
+ *         updateScores, setPlayerName, addPlayers
+ * @global arena, board, playerId, players, nameInput
+ * @function setPlayers - atribui o valor recebido a players
+ * @function setDOMPointers - obtém referências aos elementos
+ *     do DOM scoreBoard, arena e changeNameInput
+ * @function getBoard
+ * @function getArena
+ * @function getPlayers
+ * @function setEventListeners - atribuir ao evento click do elemento
+ *     de id changeNameButton uma função
+ * 
+ */
+
 import attachEventListenersToArena from '../control/attachEventListenersToArena.js';
 import updateName from '../control/updateName.js';
 import addPlayer from './addPlayer.js';
