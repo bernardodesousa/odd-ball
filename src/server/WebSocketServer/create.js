@@ -13,16 +13,19 @@
  * @export socketServer
  */
 
-let webSocketServer = require('websocket').server;
-let welcomePlayer = require('./welcomePlayer.js').server;
+let WebSocketServer = require('websocket').server;
+let welcomePlayer = require("./welcomePlayer.js");
 
 let connections = [];
 
-function SocketServer(HTTPServer) {
-    module.exports = new webSocketServer({
+function socketServer(HTTPServer) {
+    let wss = new WebSocketServer({
         httpServer: HTTPServer
-    })
-    wss.on("request", ((r) => {
+    });
+
+    wss.on("request", (r) => {
         welcomePlayer(connections, r);
-    }))
+    });
 }
+
+module.exports = socketServer;
