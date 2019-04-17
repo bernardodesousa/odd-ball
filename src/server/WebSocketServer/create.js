@@ -12,3 +12,17 @@
  *    fornecida pelo evento "request" do servidor
  * @export socketServer
  */
+
+let webSocketServer = require('websocket').server;
+let welcomePlayer = require('./welcomePlayer.js').server;
+
+let connections = [];
+
+function SocketServer(HTTPServer) {
+    module.exports = new webSocketServer({
+        httpServer: HTTPServer
+    })
+    wss.on("request", ((r) => {
+        welcomePlayer(connections, r);
+    }))
+}
