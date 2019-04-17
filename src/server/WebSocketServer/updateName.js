@@ -20,7 +20,7 @@ let broadcast = require("./broadcast.js");
 
 function updateName(connections, id, name){
     GameState.setName(id, name);
-    let mensagem = {type: updateName, id: id, name: name}
+    let mensagem = {type: "update-name", id: id, name: name}
     broadcast(connections, mensagem);
 }
 
