@@ -15,10 +15,10 @@ git clone https://github.com/<username>/odd-ball.git
 # Once you're satisfied with your contributions
 git add <changed_file>
 git commit -m "Descriptive message about what you did"
-git push
 git fetch upstream
 git checkout master
 git merge upstream/master
+git push
 * then browse to your fork page and click the pull request button
 
 # Configuring a remote for a fork
