@@ -1,1 +1,16 @@
+# Change remote username
 git config credential.${remote}.username <username>
+
+# Change credentials at current repository
+git config credential.username <username>
+git config credential.password <password>
+
+# Configuring a remote for a fork
+git remote -v
+git remote add upstream https://github.com/bernardodesousa/odd-ball.git
+git remote -v
+
+# Sync a fork
+git fetch upstream
+git checkout master
+git merge upstream/master
