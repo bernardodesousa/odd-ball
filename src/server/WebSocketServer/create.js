@@ -19,7 +19,7 @@ let welcomePlayer = require("./welcomePlayer.js");
 
 let connections = [];
 
-function socketServer (HTTPServer) {
+function socketServer(HTTPServer) {
     let wss = new WebSocketServer({
         httpServer: HTTPServer
     });
