@@ -10,3 +10,13 @@
  *  - Atualize a tabela de pontos
  * @export updateScores
  */
+import getPlayers from "./index";
+function updateScores(scores){
+    scores.forEach(element => {
+        element.boardEntry.innerText = element.name + ": " + (element.kills - element.deaths);
+        if(!element.alive)
+        element.avatar.classList.add("dead");
+    });
+}
+
+module.exports = updateScores;
