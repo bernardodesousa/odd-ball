@@ -10,6 +10,7 @@
  *    WebSocket, através da sua função "on"
  *  - A função welcomePlayer recebe o vetor de conexões e a requisição 
  *    fornecida pelo evento "request" do servidor
+ * 
  * @export socketServer
  */
 

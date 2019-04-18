@@ -14,3 +14,19 @@
  *    O valor da propriedade players deve ser o vetor de jogadores.
  * @export processShot
  */
+
+ let GameState = require(`../gameState`);
+ let broadcast = require('./broadcast');
+
+ function processShot(connections,id){
+
+    if(GameState.evaluateShot(connections,GameState.getPlayers(),id)){
+        broadcast(connections,
+            {
+            type: "update-score",
+            players: GameState.getPlayers(),
+            });
+    }
+ }
+
+ module.exports = processShot;
