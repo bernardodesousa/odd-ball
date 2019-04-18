@@ -19,9 +19,12 @@ git commit -m "Descriptive message about what you did"
 git push
 -> then browse to your fork page and click the pull request button
 
-# Configuring a remote for a fork
-git remote -v
+# Acrescentar upstream (necessário para sincronizar sua fork com a original)
 git remote add upstream https://github.com/bernardodesousa/odd-ball.git
+
+# Verificar você tem o upstream original
+## 4 linhas => GOOD
+## 2 linhas => BAD
 git remote -v
 
 # Sync a fork
@@ -29,3 +32,6 @@ git remote -v
 git fetch upstream
 git checkout master
 git merge upstream/master
+
+# Reverter mudanças até o último commit
+git checkout .
