@@ -14,3 +14,14 @@
  *    recebidos como parâmetros pelo caller
  * @export updateName
  */
+
+let GameState = require("../gameState/index");
+let broadcast = require("./broadcast.js");
+
+function updateName(connections, id, name){
+    GameState.setName(id, name);
+    let mensagem = {type: "update-name", id: id, name: name}
+    broadcast(connections, mensagem);
+}
+
+module.exports = updateName;
