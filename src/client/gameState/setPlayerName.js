@@ -1,11 +1,11 @@
-/**
- * @import { getPlayers }
- * @param id
- * @param name
- *  - Obtenha uma referência aos jogadores
- *  - Atualise o atributo nome
- *      -> do objeto jogador
- *      -> do label do jogador no DOM
- *      -> no painel de pontos
- * @export setPlayerName
- */
+import { getPlayers } from './index.js';
+
+function setPlayerName(id, name) {
+    let players = getPlayers();
+
+    players[id].name = name;
+    players[id].label.innerText = name;
+    players[id].boardEntry.innerText = `${players[id].name}: ${players[id].kills - players[id].deaths}`;
+}
+
+export default setPlayerName;

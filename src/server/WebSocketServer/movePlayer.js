@@ -14,7 +14,7 @@
  * @exports movePlayer
  */
 
-const broadcast = require('./broadcast.js');
+ const broadcast = require('./broadcast.js');
 const GameState = require("../gameState");
 
 function movePlayer(connections, playerId, input) {

@@ -12,32 +12,30 @@
  * @exports getConnection - function that returns the connection
  */
 
-import processDatagram from "./processDatagram.js";
+import processDatagram from './processDatagram.js';
 
 let connection;
 
-function connect () {
-    let domain = window.location.hostname;
-    let port = window.location.port;
-    connection = new WebSocket("ws://" + domain + ":" + port);
+function getConnection() { return connection };
+
+function connect() {
+    connection = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);
 
     connection.onopen = () => {
         console.log("OPEN!");
     };
 
-    connection.onerror = (error) => {
-        console.log(error);
+    connection.onerror = error => {
+        console.error(error);
     };
 
     connection.onmessage = processDatagram;
 
-    setInterval(()=>{
-        if (connection.readyState != 1) console.log("Server not reachable.");
+    setInterval(() => {
+        if (connection.readyState !== 1) {
+            console.error("Server not reachable.");
+        }
     }, 5000);
 }
 
-function getConnection () {
-    return connection;
-}
-
-export { getConnection, connect };
+export { connect, getConnection };

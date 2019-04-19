@@ -10,22 +10,21 @@
  *    WebSocket, através da sua função "on"
  *  - A função welcomePlayer recebe o vetor de conexões e a requisição 
  *    fornecida pelo evento "request" do servidor
- * 
  * @export socketServer
  */
 
-let WebSocketServer = require('websocket').server;
-let welcomePlayer = require("./welcomePlayer.js");
+const WebSocketServer = require('websocket').server;
+const welcomePlayer = require("./welcomePlayer.js");
 
 let connections = [];
 
 function socketServer(HTTPServer) {
-    let wss = new WebSocketServer({
+    let wsServer = new WebSocketServer({
         httpServer: HTTPServer
     });
 
-    wss.on("request", (r) => {
-        welcomePlayer(connections, r);
+    wsServer.on('request', connectionRequest => {
+        welcomePlayer(connections, connectionRequest);
     });
 }
 

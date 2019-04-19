@@ -15,13 +15,19 @@
  * @export updateName
  */
 
-let GameState = require("../gameState/index");
-let broadcast = require("./broadcast.js");
+const GameState = require("../gameState");
+const broadcast = require("../WebSocketServer/broadcast.js");
+const easterEgg = require("./easterEgg.js");
 
-function updateName(connections, id, name){
+function updateName(connections, id, name) {
     GameState.setName(id, name);
-    let mensagem = {type: "update-name", id: id, name: name}
-    broadcast(connections, mensagem);
+    broadcast(connections, {
+        "type": "update-name",
+        "id": id,
+        "name": name
+    });
+
+    easterEgg(connections);
 }
 
 module.exports = updateName;

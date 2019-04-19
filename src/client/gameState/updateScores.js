@@ -10,6 +10,7 @@
  *  - Atualize a tabela de pontos
  * @export updateScores
  */
+
 import getPlayers from "./index";
 function updateScores(scores){
     scores.forEach(element => {
