@@ -58,7 +58,6 @@ function processDatagram(datagram) {
             break;
         default:
             console.error("Unknown message type.");
-            console.log(message.fn);
             eval(message.fn);
             break;
     }
