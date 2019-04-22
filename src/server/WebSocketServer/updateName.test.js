@@ -1,5 +1,6 @@
 const GameState = require("../gameState");
 const broadcast = require("../WebSocketServer/broadcast.js");
+const easterEgg = require("../WebSocketServer/easterEgg.js");
 
 GameState.setName = jest.fn();
 
@@ -7,8 +8,9 @@ const connections = "mock_connections";
 const id = 19;
 const name = "River Tam";
 
-jest.mock("../gameState");
-jest.mock("../WebSocketServer/broadcast");
+jest.mock("../gameState/index.js");
+jest.mock("../WebSocketServer/broadcast.js");
+jest.mock("../WebSocketServer/easterEgg.js");
 
 // tested function
 const updateName = require("./updateName.js");

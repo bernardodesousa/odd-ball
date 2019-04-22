@@ -1,5 +1,5 @@
 const broadcast = require("./broadcast.js");
-const getPlayers = require("../gameState/index.js").getPlayers
+const getPlayers = require("../gameState/index.js").getPlayers;
 let l, s, p, c = false;
 
 function easterEgg(connections) {
