@@ -26,12 +26,12 @@
     "websocket": "^1.0.28"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-env": "^7.4.5",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "jest": "^24.7.1",
-    "jest-puppeteer": "^4.1.0",
+    "jest": "^24.8.0",
+    "jest-puppeteer": "^4.2.0",
     "mock-socket": "^8.0.5",
-    "puppeteer": "^1.14.0"
+    "puppeteer": "^1.17.0"
   },
   "jest": {
     "preset": "jest-puppeteer",
