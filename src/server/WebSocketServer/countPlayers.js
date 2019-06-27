@@ -7,12 +7,7 @@
  */
 
 function countPlayers(connections) {
-    let total = 0;
-    connections.forEach(c => {
-        if (c.connected) total++;
-    });
-
-    return total;
+    // TODO
 }
 
 module.exports = countPlayers;

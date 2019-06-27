@@ -20,14 +20,7 @@ const broadcast = require("../WebSocketServer/broadcast.js");
 const easterEgg = require("./easterEgg.js");
 
 function updateName(connections, id, name) {
-    GameState.setName(id, name);
-    broadcast(connections, {
-        "type": "update-name",
-        "id": id,
-        "name": name
-    });
-
-    easterEgg(connections);
+    // TODO
 }
 
 module.exports = updateName;

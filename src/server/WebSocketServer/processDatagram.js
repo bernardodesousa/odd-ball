@@ -41,7 +41,7 @@ function processDatagram(connections, playerId, datagram) {
             processShot(connections, message.id);
             break;
         case "update-name":
-            updateName(connections, message.id, message.name);
+            // TODO
             break;
         default:
             console.error("Unknown message type.");
