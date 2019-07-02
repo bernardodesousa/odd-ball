@@ -7,7 +7,11 @@
  */
 
 function countPlayers(connections) {
-    // TODO
+    var Number = 0;
+    for (let index = 0; index < connections.length; index++) {
+        if (connections[index].connected == true)
+            Number++;
+    }
+    return Number;
 }
-
 module.exports = countPlayers;
