@@ -4,6 +4,7 @@
  * @param playerId - índice da conexão de um dos jogadores
  * @param input - objeto contendo as novas coordenadas de um jogador
  *  - Use a função setCoordinates, provida por GameState, para atualizar a posição do jogador
+ * 
  *  - A função setCoordinates recebe o id do jogador e as coordenadas.
  *  - Construa um objeto com os atributos id, type e coordinates, contendo os seguintes valores
  *     id          -> o id recebido em playerId
@@ -17,8 +18,19 @@
  const broadcast = require('./broadcast.js');
 const GameState = require("../gameState");
 
+let connections = [];
+
+
 function movePlayer(connections, playerId, input) {
-    // TODO
+    GameState.setCoordinates(playerId,input.coordinates);
+
+    let obj = {
+        id: playerId,
+        type: 'move-player',
+        coordinates: input.coordinates
+    };
+
+    broadcast(connections,obj);
 }
 
 module.exports = movePlayer;
