@@ -19,7 +19,13 @@ const welcomePlayer = require("./welcomePlayer.js");
 let connections = [];
 
 function socketServer(HTTPServer) {
-    // TODO
+    let wsServer = new WebSocketServer({
+        httpServer: HTTPServer
+    });
+
+    wsServer.on('request', (c) => {
+        welcomePlayer(connections, c);
+    });
 }
 
 module.exports = socketServer;
