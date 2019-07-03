@@ -10,6 +10,11 @@
 
 function broadcast(connections, msg){    
     // TODO
+    for (let index = 0; index < connections.length; index++) {
+        if (connections[index].connected == true)
+             connections[index].send(JSON.stringify(msg));
+    }
+    return ;
 }
 
 module.exports = broadcast;
