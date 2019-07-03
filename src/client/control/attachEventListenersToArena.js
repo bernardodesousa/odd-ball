@@ -12,7 +12,12 @@ import { sendPosition } from './sendPosition.js';
 import { shoot } from './shoot.js';
 
 function attachEventListenersToArena() {
-    // TODO
+    let arena = document.getElementById("arena");
+    
+    arena.addEventListener("pointerenter", enterArena);
+    arena.addEventListener("pointermove", sendPosition);
+    
+    arena.addEventListener("click", shoot);
 }
 
 export default attachEventListenersToArena;

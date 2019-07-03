@@ -1,4 +1,5 @@
 /**
+ * --> Use the WebSocket browser API: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
  * @imports processDatagram
  * @global connection
  * @exports connect

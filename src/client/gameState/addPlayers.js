@@ -8,7 +8,9 @@
 import addPlayer from './addPlayer.js';
 
 function addPlayers(players){
-    // TODO
+    players.forEach(p => {
+        if (p != undefined) addPlayer(p);
+    });
 }
 
 export default addPlayers;
