@@ -15,7 +15,13 @@ const processDatagram = require("./processDatagram.js");
 const removePlayer = require("./removePlayer.js");
 
 function attachEventFunctionsTo(connections, playerId) {
-    // TODO
+    connections[playerId].on('message', (data) => {
+        processDatagram(connections, playerId, data);
+    });
+
+    connections[playerId].on('close', (rm) => {
+        removePlayer(connections, playerId, rm);
+    });
 }
 
 module.exports = attachEventFunctionsTo;
