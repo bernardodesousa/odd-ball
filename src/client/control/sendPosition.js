@@ -18,7 +18,15 @@ import calculatePosition from './calculatePosition.js';
 import { getStatus } from '../gameState/index.js';
 
 function sendPosition(event) {
-    // TODO
+    if (getStatus() == "dead") return;
+
+    let position = {
+        type: "coordinates",
+        coordinates: calculatePosition(event)
+    }
+
+    let c = getConnection();
+    c.send(JSON.stringify(position));
 }
 
 export { sendPosition };
