@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "serve": "node main.js",
-    "test": "npm run test:client && npm run test:server",
+    "test": "npm run test:server && npm run test:client",
     "test:client": "jest --verbose --env=jsdom --testPathIgnorePatterns server/",
     "test:server": "jest --verbose --env=node --testPathIgnorePatterns client/",
     "generate-diagrams": "npm run generate-server-dependency-graph && npm run generate-client-dependency-graph",
