@@ -15,6 +15,7 @@ import { getConnection } from '../connection/index.js';
 import { getPlayer } from '../gameState/index.js';
 
 function updateName(name) {
+    if (name.length > 20) return;
     let connection = getConnection();
     let instruction = {
         type: "update-name",
