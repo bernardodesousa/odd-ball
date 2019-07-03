@@ -20,7 +20,23 @@ let connection;
 function getConnection() { return connection };
 
 function connect() {
-    // TODO
+    connection = new WebSocket(`ws://${window.location.hostname}:${window.location.port}`);
+
+    connection.onopen = () => {
+        console.log("OPEN!");
+    }
+
+    connection.onerror = (e) => {
+        console.error(e);
+    }
+
+    connection.onmessage = processDatagram;
+
+    setInterval(() => {
+        if (connection.readyState !== connection.OPEN) {
+            console.error("Server not reachable.");
+        }
+    }, 5000);
 }
 
 export { connect, getConnection };
