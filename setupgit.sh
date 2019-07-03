@@ -3,7 +3,7 @@
 # at the #FatecSAT2019 NodeJS & WebSockets workshop.
 # -------------------------------------------------------
 # Usage:
-# $ ./setupgit <myGitHubUserName> <my@github.email>
+# $ ./setupgit.sh <myGitHubUserName> <my@github.email>
 # -------------------------------------------------------
 
 echo "Setting up Git to work for GitHub user $1, who's email is $2"
