@@ -11,3 +11,4 @@ git remote rename origin upstream
 git remote add origin https://github.com/$1/odd-ball.git
 git config --global user.email "$2"
 git config --global user.name "$1"
+git push --set-upstream origin master
