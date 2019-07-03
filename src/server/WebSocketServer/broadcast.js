@@ -10,7 +10,7 @@
 
 function broadcast(connections, msg){    
     // TODO
-    for (var index = 0; index < connections.length; index++) {
+    for (let index = 0; index < connections.length; index++) {
         if (connections[index].connected == true)
              connections[index].send(JSON.stringify(msg));
     }
