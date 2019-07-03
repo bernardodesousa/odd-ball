@@ -9,7 +9,13 @@
 import { getConnection } from '../connection/index.js';
 
 function enterArena() {
-    // TODO
+    let c = getConnection();
+
+    let ins = {
+        type: "pointer-enter"
+    }
+
+    c.send(JSON.stringify(ins));
 }
 
 export default enterArena;
