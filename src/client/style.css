@@ -37,12 +37,6 @@ body {
     background-color: #1f1f1f;
 }
 
-#chatContainer {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
 #changeNameContainer {
     position: fixed;
     bottom: 10px;
@@ -55,17 +49,6 @@ body {
     position: fixed;
     top: 10px;
     left: 10px;
-    background-color: #404040;
-    padding: 4px 16px;
-    line-height: 9px;
-}
-
-#chatBoard {
-    color: lime;
-    font-size: 12px;
-    position: fixed;    
-    top: 10px;
-    right: 10px;
     background-color: #404040;
     padding: 4px 16px;
     line-height: 9px;
